@@ -1,0 +1,410 @@
+<!--
+CO_OP_TRANSLATOR_METADATA:
+{
+  "original_hash": "03f5022615bbc23417d5af42943d12f5",
+  "translation_date": "2025-10-20T21:43:47+00:00",
+  "source_file": "6-space-game/3-moving-elements-around/README.md",
+  "language_code": "ne"
+}
+-->
+# स्पेस गेम बनाउनुहोस् भाग ३: गति थप्ने
+
+## प्रि-लेक्चर क्विज
+
+[प्रि-लेक्चर क्विज](https://ff-quizzes.netlify.app/web/quiz/33)
+
+खेलहरू त्यति रमाइलो हुँदैनन् जबसम्म स्क्रिनमा एलियनहरू दौडिरहेका हुँदैनन्! यस खेलमा, हामी दुई प्रकारका गतिहरूको प्रयोग गर्नेछौं:
+
+- **किबोर्ड/माउस गति**: जब प्रयोगकर्ताले स्क्रिनमा वस्तु सार्न किबोर्ड वा माउससँग अन्तरक्रिया गर्दछ।
+- **खेलद्वारा प्रेरित गति**: जब खेलले निश्चित समय अन्तरालमा वस्तु सार्छ।
+
+त्यसैले स्क्रिनमा चीजहरू कसरी सार्ने? यो सबै कार्टेसियन समन्वयको बारेमा हो: हामी वस्तुको स्थान (x, y) परिवर्तन गर्छौं र त्यसपछि स्क्रिन पुन: चित्रण गर्छौं।
+
+सामान्यतया स्क्रिनमा *गति* हासिल गर्न निम्न चरणहरू आवश्यक हुन्छन्:
+
+1. **नयाँ स्थान सेट गर्नुहोस्**: वस्तु सारिएको देख्नको लागि यो आवश्यक छ।
+2. **स्क्रिन सफा गर्नुहोस्**: स्क्रिनलाई पुन: चित्रणको बीचमा सफा गर्न आवश्यक छ। हामी यसलाई पृष्ठभूमि रंगले भरिएको आयत चित्रण गरेर सफा गर्न सक्छौं।
+3. **नयाँ स्थानमा वस्तु पुन: चित्रण गर्नुहोस्**: यसो गर्दा हामी अन्ततः वस्तुलाई एक स्थानबाट अर्को स्थानमा सार्न सफल हुन्छौं।
+
+यो कोडमा यस्तो देखिन सक्छ:
+
+```javascript
+//set the hero's location
+hero.x += 5;
+// clear the rectangle that hosts the hero
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// redraw the game background and hero
+ctx.fillRect(0, 0, canvas.width, canvas.height)
+ctx.fillStyle = "black";
+ctx.drawImage(heroImg, hero.x, hero.y);
+```
+
+✅ के तपाईं सोच्न सक्नुहुन्छ किन तपाईंको नायकलाई धेरै फ्रेम प्रति सेकेन्ड पुन: चित्रण गर्दा प्रदर्शन लागत बढ्न सक्छ? [यस ढाँचाको विकल्पहरू](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas) बारे पढ्नुहोस्।
+
+## किबोर्ड इभेन्टहरू ह्यान्डल गर्नुहोस्
+
+तपाईंले कोडमा विशिष्ट इभेन्टहरू जोडेर इभेन्टहरू ह्यान्डल गर्नुहुन्छ। किबोर्ड इभेन्टहरू सम्पूर्ण विन्डोमा ट्रिगर हुन्छन् भने माउस इभेन्टहरू जस्तै `क्लिक` विशिष्ट तत्वमा क्लिक गर्न जोड्न सकिन्छ। हामी यस परियोजनामा ​​किबोर्ड इभेन्टहरू प्रयोग गर्नेछौं।
+
+इभेन्ट ह्यान्डल गर्न तपाईंले विन्डोको `addEventListener()` विधि प्रयोग गर्न आवश्यक छ र यसलाई दुई इनपुट प्यारामिटरहरू प्रदान गर्न आवश्यक छ। पहिलो प्यारामिटर इभेन्टको नाम हो, उदाहरणका लागि `keyup`। दोस्रो प्यारामिटर इभेन्ट हुने परिणामस्वरूप बोलाइनु पर्ने फङ्सन हो।
+
+यहाँ एउटा उदाहरण छ:
+
+```javascript
+window.addEventListener('keyup', (evt) => {
+  // `evt.key` = string representation of the key
+  if (evt.key === 'ArrowUp') {
+    // do something
+  }
+})
+```
+
+किबोर्ड इभेन्टहरूको लागि इभेन्टमा दुई गुणहरू छन् जसले कुन कुञ्जी थिचिएको थियो भनेर हेर्न प्रयोग गर्न सकिन्छ:
+
+- `key`, यो थिचिएको कुञ्जीको स्ट्रिङ प्रतिनिधित्व हो, उदाहरणका लागि `ArrowUp`
+- `keyCode`, यो संख्यात्मक प्रतिनिधित्व हो, उदाहरणका लागि `37`, जुन `ArrowLeft` सँग मेल खान्छ।
+
+✅ किबोर्ड इभेन्ट हेरफेर खेल विकास बाहिर उपयोगी छ। यस प्रविधिको लागि तपाईं अरू के उपयोग सोच्न सक्नुहुन्छ?
+
+### विशेष कुञ्जीहरू: एक चेतावनी
+
+केही *विशेष* कुञ्जीहरू छन् जसले विन्डोलाई असर गर्छ। यसको मतलब यदि तपाईं `keyup` इभेन्ट सुन्दै हुनुहुन्छ र तपाईंले आफ्नो नायकलाई सार्न यी विशेष कुञ्जीहरू प्रयोग गर्नुभयो भने यसले तेर्सो स्क्रोलिंग पनि गर्नेछ। त्यस कारणले गर्दा तपाईंले आफ्नो खेल निर्माण गर्दा यो बिल्ट-इन ब्राउजर व्यवहारलाई *बन्द* गर्न चाहनुहुन्छ। तपाईंलाई यस्तो कोड चाहिन्छ:
+
+```javascript
+let onKeyDown = function (e) {
+  console.log(e.keyCode);
+  switch (e.keyCode) {
+    case 37:
+    case 39:
+    case 38:
+    case 40: // Arrow keys
+    case 32:
+      e.preventDefault();
+      break; // Space
+    default:
+      break; // do not block other keys
+  }
+};
+
+window.addEventListener('keydown', onKeyDown);
+```
+
+माथिको कोडले सुनिश्चित गर्नेछ कि एरो-कुञ्जीहरू र स्पेस कुञ्जीको *डिफल्ट* व्यवहार बन्द गरिएको छ। *बन्द* गर्ने मेकानिजम तब हुन्छ जब हामी `e.preventDefault()` कल गर्छौं।
+
+## खेलद्वारा प्रेरित गति
+
+हामीले `setTimeout()` वा `setInterval()` जस्ता टाइमरहरू प्रयोग गरेर वस्तुहरू आफैंलाई सार्न सक्दछौं जसले प्रत्येक टिक वा समय अन्तरालमा वस्तुको स्थान अपडेट गर्दछ। यो यस्तो देखिन सक्छ:
+
+```javascript
+let id = setInterval(() => {
+  //move the enemy on the y axis
+  enemy.y += 10;
+})
+```
+
+## खेल लूप
+
+खेल लूप एक अवधारणा हो जुन अनिवार्य रूपमा नियमित अन्तरालमा बोलाइएको फङ्सन हो। यसलाई खेल लूप भनिन्छ किनभने प्रयोगकर्तालाई देखिनु पर्ने सबै कुरा लूपमा चित्रण गरिन्छ। खेल लूपले खेलको भाग भएका सबै खेल वस्तुहरूको प्रयोग गर्दछ, तिनीहरूलाई चित्रण गर्दै जबसम्म कुनै कारणले गर्दा खेलको भाग हुनु हुँदैन। उदाहरणका लागि यदि कुनै वस्तु लेजरले हानिएको दुश्मन हो र विस्फोट हुन्छ भने, यो अब वर्तमान खेल लूपको भाग हुँदैन (तपाईं यस बारेमा थप पाठहरूमा सिक्नुहुनेछ)।
+
+खेल लूप सामान्यतया कोडमा यस्तो देखिन्छ:
+
+```javascript
+let gameLoopId = setInterval(() =>
+  function gameLoop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    drawHero();
+    drawEnemies();
+    drawStaticObjects();
+}, 200);
+```
+
+माथिको लूप प्रत्येक `200` मिलिसेकेन्डमा क्यानभास पुन: चित्रण गर्न बोलाइन्छ। तपाईंको खेलको लागि उपयुक्त अन्तराल छनोट गर्ने क्षमता तपाईंलाई छ।
+
+## स्पेस गेम जारी राख्दै
+
+तपाईंले अवस्थित कोड लिनेछ र यसलाई विस्तार गर्नेछ। भाग I मा तपाईंले पूरा गरेको कोडबाट सुरु गर्नुहोस् वा [भाग II- स्टार्टर](../../../../6-space-game/3-moving-elements-around/your-work) मा कोड प्रयोग गर्नुहोस्।
+
+- **नायकलाई सार्दै**: तपाईंले एरो कुञ्जीहरू प्रयोग गरेर नायकलाई सार्न सक्ने सुनिश्चित गर्न कोड थप्नुहुनेछ।
+- **दुश्मनहरूलाई सार्नुहोस्**: तपाईंले दुश्मनहरूलाई निश्चित दरमा माथिबाट तल सर्ने सुनिश्चित गर्न कोड पनि थप्न आवश्यक छ।
+
+## सिफारिस गरिएका चरणहरू
+
+`your-work` उप फोल्डरमा तपाईंको लागि सिर्जना गरिएका फाइलहरू पत्ता लगाउनुहोस्। यसले निम्न समावेश गर्नुपर्छ:
+
+```bash
+-| assets
+  -| enemyShip.png
+  -| player.png
+-| index.html
+-| app.js
+-| package.json
+```
+
+तपाईं आफ्नो परियोजना `your_work` फोल्डरमा निम्न टाइप गरेर सुरु गर्नुहोस्:
+
+```bash
+cd your-work
+npm start
+```
+
+माथिकोले `http://localhost:5000` ठेगानामा HTTP सर्भर सुरु गर्नेछ। ब्राउजर खोल्नुहोस् र उक्त ठेगाना इनपुट गर्नुहोस्, अहिले यसले नायक र सबै दुश्मनहरूलाई प्रस्तुत गर्नुपर्छ; केही पनि सर्दैन - अझै!
+
+### कोड थप्नुहोस्
+
+1. **नायक**, **दुश्मन**, र **खेल वस्तु**का लागि समर्पित वस्तुहरू थप्नुहोस्, तिनीहरूसँग `x` र `y` गुणहरू हुनुपर्छ। ([Inheritance or composition](../README.md) को भाग सम्झनुहोस्।)
+
+   *सुझाव* `खेल वस्तु` त्यो हुनुपर्छ जससँग `x` र `y` छ र क्यानभासमा आफैंलाई चित्रण गर्ने क्षमता छ।
+
+   >सुझाव: नयाँ GameObject क्लास थपेर यसको कन्स्ट्रक्टरलाई तलको रूपमा परिभाषित गर्नुहोस्, र त्यसपछि क्यानभासमा चित्रण गर्नुहोस्:
+  
+    ```javascript
+        
+    class GameObject {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.dead = false;
+        this.type = "";
+        this.width = 0;
+        this.height = 0;
+        this.img = undefined;
+      }
+    
+      draw(ctx) {
+        ctx.drawImage(this.img, this.x, this.y, this.width, this.height);
+      }
+    }
+    ```
+
+    अब, यस GameObject लाई विस्तार गरेर नायक र दुश्मन सिर्जना गर्नुहोस्।
+    
+    ```javascript
+    class Hero extends GameObject {
+      constructor(x, y) {
+        ...it needs an x, y, type, and speed
+      }
+    }
+    ```
+
+    ```javascript
+    class Enemy extends GameObject {
+      constructor(x, y) {
+        super(x, y);
+        (this.width = 98), (this.height = 50);
+        this.type = "Enemy";
+        let id = setInterval(() => {
+          if (this.y < canvas.height - this.height) {
+            this.y += 5;
+          } else {
+            console.log('Stopped at', this.y)
+            clearInterval(id);
+          }
+        }, 300)
+      }
+    }
+    ```
+
+2. **कुञ्जी-इभेन्ट ह्यान्डलरहरू थप्नुहोस्** नायकलाई माथि/तल, बायाँ/दायाँ सार्न कुञ्जी नेभिगेसन ह्यान्डल गर्न।
+
+   *स्मरण गर्नुहोस्* यो कार्टेसियन प्रणाली हो, माथि-बायाँ `0,0` हो। साथै *डिफल्ट व्यवहार* रोक्न कोड थप्न सम्झनुहोस्।
+
+   >सुझाव: आफ्नो onKeyDown फङ्सन सिर्जना गर्नुहोस् र यसलाई विन्डोमा जोड्नुहोस्:
+
+   ```javascript
+    let onKeyDown = function (e) {
+	      console.log(e.keyCode);
+	        ...add the code from the lesson above to stop default behavior
+	      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+   ```
+    
+   यस बिन्दुमा आफ्नो ब्राउजर कन्सोल जाँच गर्नुहोस्, र कुञ्जी थिचाइहरू लग गरिएको हेर्नुहोस्।
+
+3. **[Pub sub pattern](../README.md) कार्यान्वयन गर्नुहोस्**, यसले तपाईंको कोडलाई सफा राख्नेछ जब तपाईं बाँकी भागहरू पछ्याउनुहुन्छ।
+
+   यो अन्तिम भाग गर्न, तपाईं गर्न सक्नुहुन्छ:
+
+   1. **विन्डोमा इभेन्ट लिस्नर थप्नुहोस्**:
+
+       ```javascript
+        window.addEventListener("keyup", (evt) => {
+          if (evt.key === "ArrowUp") {
+            eventEmitter.emit(Messages.KEY_EVENT_UP);
+          } else if (evt.key === "ArrowDown") {
+            eventEmitter.emit(Messages.KEY_EVENT_DOWN);
+          } else if (evt.key === "ArrowLeft") {
+            eventEmitter.emit(Messages.KEY_EVENT_LEFT);
+          } else if (evt.key === "ArrowRight") {
+            eventEmitter.emit(Messages.KEY_EVENT_RIGHT);
+          }
+        });
+        ```
+
+    1. **EventEmitter क्लास सिर्जना गर्नुहोस्** सन्देशहरू प्रकाशित गर्न र सदस्यता लिन:
+
+        ```javascript
+        class EventEmitter {
+          constructor() {
+            this.listeners = {};
+          }
+        
+          on(message, listener) {
+            if (!this.listeners[message]) {
+              this.listeners[message] = [];
+            }
+            this.listeners[message].push(listener);
+          }
+        
+          emit(message, payload = null) {
+            if (this.listeners[message]) {
+              this.listeners[message].forEach((l) => l(message, payload));
+            }
+          }
+        }
+        ```
+
+    1. **Constants थप्नुहोस्** र EventEmitter सेट गर्नुहोस्:
+
+        ```javascript
+        const Messages = {
+          KEY_EVENT_UP: "KEY_EVENT_UP",
+          KEY_EVENT_DOWN: "KEY_EVENT_DOWN",
+          KEY_EVENT_LEFT: "KEY_EVENT_LEFT",
+          KEY_EVENT_RIGHT: "KEY_EVENT_RIGHT",
+        };
+        
+        let heroImg, 
+            enemyImg, 
+            laserImg,
+            canvas, ctx, 
+            gameObjects = [], 
+            hero, 
+            eventEmitter = new EventEmitter();
+        ```
+
+    1. **खेल सुरु गर्नुहोस्**
+
+    ```javascript
+    function initGame() {
+      gameObjects = [];
+      createEnemies();
+      createHero();
+    
+      eventEmitter.on(Messages.KEY_EVENT_UP, () => {
+        hero.y -=5 ;
+      })
+    
+      eventEmitter.on(Messages.KEY_EVENT_DOWN, () => {
+        hero.y += 5;
+      });
+    
+      eventEmitter.on(Messages.KEY_EVENT_LEFT, () => {
+        hero.x -= 5;
+      });
+    
+      eventEmitter.on(Messages.KEY_EVENT_RIGHT, () => {
+        hero.x += 5;
+      });
+    }
+    ```
+
+1. **खेल लूप सेटअप गर्नुहोस्**
+
+   विन्डो.onload फङ्सनलाई खेल सुरु गर्न र राम्रो अन्तरालमा खेल लूप सेटअप गर्न पुन: परिभाषित गर्नुहोस्। तपाईंले लेजर बीम पनि थप्नुहुनेछ:
+
+    ```javascript
+    window.onload = async () => {
+      canvas = document.getElementById("canvas");
+      ctx = canvas.getContext("2d");
+      heroImg = await loadTexture("assets/player.png");
+      enemyImg = await loadTexture("assets/enemyShip.png");
+      laserImg = await loadTexture("assets/laserRed.png");
+    
+      initGame();
+      let gameLoopId = setInterval(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        drawGameObjects(ctx);
+      }, 100)
+      
+    };
+    ```
+
+5. **कोड थप्नुहोस्** दुश्मनहरूलाई निश्चित अन्तरालमा सार्न
+
+    `createEnemies()` फङ्सनलाई पुन: परिभाषित गरेर दुश्मनहरू सिर्जना गर्नुहोस् र तिनीहरूलाई नयाँ gameObjects क्लासमा धकेल्नुहोस्:
+
+    ```javascript
+    function createEnemies() {
+      const MONSTER_TOTAL = 5;
+      const MONSTER_WIDTH = MONSTER_TOTAL * 98;
+      const START_X = (canvas.width - MONSTER_WIDTH) / 2;
+      const STOP_X = START_X + MONSTER_WIDTH;
+    
+      for (let x = START_X; x < STOP_X; x += 98) {
+        for (let y = 0; y < 50 * 5; y += 50) {
+          const enemy = new Enemy(x, y);
+          enemy.img = enemyImg;
+          gameObjects.push(enemy);
+        }
+      }
+    }
+    ```
+    
+    र नायकको लागि समान प्रक्रिया गर्न `createHero()` फङ्सन थप्नुहोस्।
+    
+    ```javascript
+    function createHero() {
+      hero = new Hero(
+        canvas.width / 2 - 45,
+        canvas.height - canvas.height / 4
+      );
+      hero.img = heroImg;
+      gameObjects.push(hero);
+    }
+    ```
+
+    अन्तमा, `drawGameObjects()` फङ्सन थपेर चित्रण सुरु गर्नुहोस्:
+
+    ```javascript
+    function drawGameObjects(ctx) {
+      gameObjects.forEach(go => go.draw(ctx));
+    }
+    ```
+
+    तपाईंका दुश्मनहरू तपाईंको नायक स्पेसशिपमा अगाडि बढ्न सुरु गर्नुपर्छ!
+
+---
+
+## GitHub Copilot Agent Challenge 🚀
+
+Agent मोड प्रयोग गरेर निम्न चुनौती पूरा गर्नुहोस्:
+
+**विवरण:** सीमा पत्ता लगाउने प्रणाली र सहज गति नियन्त्रण कार्यान्वयन गरेर स्पेस गेमलाई सुधार गर्नुहोस्। यो चुनौतीले तपाईंलाई खेल वस्तु हेरफेर, इभेन्ट ह्यान्डलिङ, र क्यानभास रेंडरिङ प्रविधिहरू अभ्यास गर्न मद्दत गर्नेछ।
+
+**प्रेरणा:** नायक स्पेसशिपलाई क्यानभास सीमाहरू बाहिर सर्नबाट रोक्ने सीमा पत्ता लगाउने प्रणाली सिर्जना गर्नुहोस्। साथै, एरो कुञ्जीहरू थिच्दा निरन्तर गति सिर्जना गर्ने सहज गति प्रणाली कार्यान्वयन गर्नुहोस्। सुनिश्चित गर्नुहोस् कि कुञ्जीहरू छोड्दा नायक तुरुन्तै रोक्छ र नायकले सीमा हान्दा दृश्य प्रतिक्रिया थप्नुहोस् (जस्तै छोटो रंग परिवर्तन वा चमक प्रभाव)।
+
+## 🚀 चुनौती
+
+जस्तो तपाईं देख्न सक्नुहुन्छ, तपाईंको कोड 'स्प्यागेटी कोड' मा परिणत हुन सक्छ जब तपाईं फङ्सनहरू, भेरिएबलहरू, र क्लासहरू थप्न सुरु गर्नुहुन्छ। तपाईंको कोडलाई अझ पढ्न योग्य बनाउनको लागि कसरी राम्रोसँग व्यवस्थित गर्न सकिन्छ? प्रणालीको स्केच बनाउनुहोस् ताकि तपाईंको कोड अझै एक फाइलमा भए पनि व्यवस्थित होस्।
+
+## पोस्ट-लेक्चर क्विज
+
+[पोस्ट-लेक्चर क्विज](https://ff-quizzes.netlify.app/web/quiz/34)
+
+## समीक्षा र आत्म अध्ययन
+
+हामी फ्रेमवर्कहरू प्रयोग नगरी हाम्रो खेल लेख्दैछौं, तर खेल विकासको लागि धेरै जाभास्क्रिप्ट-आधारित क्यानभास फ्रेमवर्कहरू छन्। यी बारेमा [पढ्नको लागि समय निकाल्नुहोस्](https://github.com/collections/javascript-game-engines)।
+
+## असाइनमेन्ट
+
+[तपाईंको कोडमा टिप्पणी गर्नुहोस्](assignment.md)
+
+---
+
+**अस्वीकरण**:  
+यो दस्तावेज AI अनुवाद सेवा [Co-op Translator](https://github.com/Azure/co-op-translator) प्रयोग गरेर अनुवाद गरिएको छ। हामी शुद्धताको लागि प्रयास गर्छौं, तर कृपया ध्यान दिनुहोस् कि स्वचालित अनुवादमा त्रुटिहरू वा अशुद्धताहरू हुन सक्छ। यसको मूल भाषा मा रहेको दस्तावेजलाई आधिकारिक स्रोत मानिनुपर्छ। महत्वपूर्ण जानकारीको लागि, व्यावसायिक मानव अनुवाद सिफारिस गरिन्छ। यस अनुवादको प्रयोगबाट उत्पन्न हुने कुनै पनि गलतफहमी वा गलत व्याख्याको लागि हामी जिम्मेवार हुने छैनौं।
