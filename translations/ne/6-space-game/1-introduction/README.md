@@ -1,0 +1,236 @@
+<!--
+CO_OP_TRANSLATOR_METADATA:
+{
+  "original_hash": "d9da6dc61fb712b29f65e108c79b8a5d",
+  "translation_date": "2025-08-25T22:30:39+00:00",
+  "source_file": "6-space-game/1-introduction/README.md",
+  "language_code": "ne"
+}
+-->
+# स्पेस गेम बनाउनुहोस् भाग १: परिचय
+
+![video](../../../../6-space-game/images/pewpew.gif)
+
+## प्रि-लेक्चर क्विज
+
+[प्रि-लेक्चर क्विज](https://ff-quizzes.netlify.app/web/quiz/29)
+
+### गेम विकासमा इनहेरिटेन्स र कम्पोजिसन
+
+पहिलेका पाठहरूमा, तपाईंले बनाएका एप्सको डिजाइन आर्किटेक्चरको बारेमा धेरै सोच्न आवश्यक थिएन, किनकि परियोजनाहरू धेरै सानो दायरामा थिए। तर, जब तपाईंको एप्लिकेसनको आकार र दायरा बढ्छ, आर्किटेक्चरल निर्णयहरू ठूलो चासोको विषय बन्छ। जाभास्क्रिप्टमा ठूला एप्लिकेसनहरू बनाउने दुई प्रमुख तरिकाहरू छन्: *कम्पोजिसन* वा *इनहेरिटेन्स*। दुवैको आफ्नै फाइदा र बेफाइदा छन्, तर यसलाई खेलको सन्दर्भमा व्याख्या गरौं।
+
+✅ सबैभन्दा प्रसिद्ध प्रोग्रामिङ पुस्तकहरू मध्ये एक [डिजाइन प्याटर्न्स](https://en.wikipedia.org/wiki/Design_Patterns) को बारेमा हो।
+
+खेलमा तपाईंसँग `game objects` हुन्छन्, जुन स्क्रिनमा हुने वस्तुहरू हुन्। यसको मतलब तिनीहरूको कार्टेसियन कोअर्डिनेट प्रणालीमा स्थान हुन्छ, जसलाई `x` र `y` कोअर्डिनेटले वर्णन गरिन्छ। जब तपाईं खेल विकास गर्नुहुन्छ, तपाईंले देख्नुहुनेछ कि तपाईंका सबै गेम वस्तुहरूमा केही सामान्य गुण हुन्छन्, जुन तपाईंले बनाउने प्रत्येक खेलका लागि समान हुन्छन्। ती तत्वहरू निम्न प्रकारका हुन्छन्:
+
+- **स्थान-आधारित** प्रायः सबै खेलका तत्वहरू स्थान-आधारित हुन्छन्। यसको मतलब तिनीहरूको `x` र `y` स्थान हुन्छ।
+- **चलायमान** यी वस्तुहरू नयाँ स्थानमा सर्न सक्छन्। यो सामान्यतया नायक, राक्षस वा NPC (नन प्लेयर क्यारेक्टर) हुन्छ, तर उदाहरणका लागि, रूखजस्ता स्थिर वस्तुहरू होइन।
+- **आफै नष्ट हुने** यी वस्तुहरू निश्चित समयको लागि मात्र अस्तित्वमा रहन्छन् र त्यसपछि मेटिने तयारी गर्छन्। सामान्यतया यो `dead` वा `destroyed` boolean द्वारा प्रतिनिधित्व गरिन्छ, जसले गेम इन्जिनलाई यो वस्तु अब रेंडर गर्न नपर्ने संकेत दिन्छ।
+- **कूल-डाउन** 'कूल-डाउन' छोटो समयको लागि अस्तित्वमा रहने वस्तुहरूको सामान्य गुण हो। यसको उदाहरण भनेको केही मिलिसेकेन्डको लागि देखिने पाठ वा विस्फोटजस्तो ग्राफिकल प्रभाव हो।
+
+✅ प्याक-म्यानजस्तो खेलको बारेमा सोच्नुहोस्। के तपाईंले माथि उल्लेख गरिएका चार वस्तु प्रकारहरू यस खेलमा पहिचान गर्न सक्नुहुन्छ?
+
+### व्यवहार व्यक्त गर्ने
+
+माथि वर्णन गरिएका सबै खेल वस्तुहरूको व्यवहार हो। त्यसो भए हामीले ती कसरी कोड गर्ने? हामी यी व्यवहारलाई कक्षाहरू वा वस्तुहरूसँग सम्बन्धित विधिहरूको रूपमा व्यक्त गर्न सक्छौं।
+
+**कक्षाहरू**
+
+विचार यो हो कि `classes` लाई `inheritance` सँग मिलाएर कक्षामा निश्चित व्यवहार थप्न प्रयोग गरिन्छ।
+
+✅ इनहेरिटेन्स महत्त्वपूर्ण अवधारणा हो। [MDN को इनहेरिटेन्सको लेख](https://developer.mozilla.org/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) मा थप जान्नुहोस्।
+
+कोड मार्फत व्यक्त गर्दा, खेल वस्तु सामान्यतया यस प्रकार देखिन्छ:
+
+```javascript
+
+//set up the class GameObject
+class GameObject {
+  constructor(x, y, type) {
+    this.x = x;
+    this.y = y;
+    this.type = type;
+  }
+}
+
+//this class will extend the GameObject's inherent class properties
+class Movable extends GameObject {
+  constructor(x,y, type) {
+    super(x,y, type)
+  }
+
+//this movable object can be moved on the screen
+  moveTo(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+
+//this is a specific class that extends the Movable class, so it can take advantage of all the properties that it inherits
+class Hero extends Movable {
+  constructor(x,y) {
+    super(x,y, 'Hero')
+  }
+}
+
+//this class, on the other hand, only inherits the GameObject properties
+class Tree extends GameObject {
+  constructor(x,y) {
+    super(x,y, 'Tree')
+  }
+}
+
+//a hero can move...
+const hero = new Hero();
+hero.moveTo(5,5);
+
+//but a tree cannot
+const tree = new Tree();
+```
+
+✅ केही मिनेट समय लिएर प्याक-म्यान नायक (जस्तै, इन्की, पिंकी वा ब्लिंकी) लाई पुनः कल्पना गर्नुहोस् र यसलाई जाभास्क्रिप्टमा कसरी लेख्न सकिन्छ भनेर सोच्नुहोस्।
+
+**कम्पोजिसन**
+
+वस्तु इनहेरिटेन्सलाई ह्यान्डल गर्ने अर्को तरिका भनेको *कम्पोजिसन* प्रयोग गर्नु हो। त्यसपछि, वस्तुहरूले आफ्नो व्यवहार यस प्रकार व्यक्त गर्छन्:
+
+```javascript
+//create a constant gameObject
+const gameObject = {
+  x: 0,
+  y: 0,
+  type: ''
+};
+
+//...and a constant movable
+const movable = {
+  moveTo(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+//then the constant movableObject is composed of the gameObject and movable constants
+const movableObject = {...gameObject, ...movable};
+
+//then create a function to create a new Hero who inherits the movableObject properties
+function createHero(x, y) {
+  return {
+    ...movableObject,
+    x,
+    y,
+    type: 'Hero'
+  }
+}
+//...and a static object that inherits only the gameObject properties
+function createStatic(x, y, type) {
+  return {
+    ...gameObject
+    x,
+    y,
+    type
+  }
+}
+//create the hero and move it
+const hero = createHero(10,10);
+hero.moveTo(5,5);
+//and create a static tree which only stands around
+const tree = createStatic(0,0, 'Tree'); 
+```
+
+**कुन प्याटर्न प्रयोग गर्ने?**
+
+तपाईं कुन प्याटर्न रोज्नुहुन्छ भन्ने तपाईंको निर्णय हो। जाभास्क्रिप्टले यी दुवै पद्धतिहरूलाई समर्थन गर्दछ।
+
+--
+
+गेम विकासमा सामान्य अर्को प्याटर्नले खेलको प्रयोगकर्ता अनुभव र प्रदर्शनलाई ह्यान्डल गर्ने समस्यालाई सम्बोधन गर्छ।
+
+## पब/सब प्याटर्न
+
+✅ पब/सबको अर्थ 'पब्लिश-सब्स्क्राइब' हो।
+
+यो प्याटर्नले तपाईंको एप्लिकेसनका विभिन्न भागहरूले एक-अर्काको बारेमा थाहा नपाउने विचारलाई सम्बोधन गर्छ। किन? यदि विभिन्न भागहरू अलग छन् भने सामान्यतया के भइरहेको छ भनेर बुझ्न सजिलो हुन्छ। साथै, यदि तपाईंलाई अचानक व्यवहार परिवर्तन गर्न आवश्यक परेमा यो सजिलो हुन्छ। हामी यो कसरी पूरा गर्छौं? हामी केही अवधारणाहरू स्थापना गरेर गर्छौं:
+
+- **सन्देश**: सन्देश सामान्यतया पाठ स्ट्रिङ हुन्छ, जसमा वैकल्पिक पेलोड (सन्देशको बारेमा स्पष्ट पार्ने डाटा) हुन्छ। खेलमा सामान्य सन्देश `KEY_PRESSED_ENTER` हुन सक्छ।
+- **पब्लिशर**: यो तत्वले सन्देश *पब्लिश* गर्छ र सबै सब्स्क्राइबरहरूलाई पठाउँछ।
+- **सब्स्क्राइबर**: यो तत्वले विशिष्ट सन्देशहरू *सुन्छ* र यो सन्देश प्राप्त गर्दा केही कार्य गर्दछ, जस्तै लेजर फायर गर्नु।
+
+यसको कार्यान्वयन आकारमा सानो छ तर यो धेरै शक्तिशाली प्याटर्न हो। यसलाई यसरी कार्यान्वयन गर्न सकिन्छ:
+
+```javascript
+//set up an EventEmitter class that contains listeners
+class EventEmitter {
+  constructor() {
+    this.listeners = {};
+  }
+//when a message is received, let the listener to handle its payload
+  on(message, listener) {
+    if (!this.listeners[message]) {
+      this.listeners[message] = [];
+    }
+    this.listeners[message].push(listener);
+  }
+//when a message is sent, send it to a listener with some payload
+  emit(message, payload = null) {
+    if (this.listeners[message]) {
+      this.listeners[message].forEach(l => l(message, payload))
+    }
+  }
+}
+
+```
+
+माथिको कोड प्रयोग गर्न हामी सानो कार्यान्वयन बनाउन सक्छौं:
+
+```javascript
+//set up a message structure
+const Messages = {
+  HERO_MOVE_LEFT: 'HERO_MOVE_LEFT'
+};
+//invoke the eventEmitter you set up above
+const eventEmitter = new EventEmitter();
+//set up a hero
+const hero = createHero(0,0);
+//let the eventEmitter know to watch for messages pertaining to the hero moving left, and act on it
+eventEmitter.on(Messages.HERO_MOVE_LEFT, () => {
+  hero.move(5,0);
+});
+
+//set up the window to listen for the keyup event, specifically if the left arrow is hit, emit a message to move the hero left
+window.addEventListener('keyup', (evt) => {
+  if (evt.key === 'ArrowLeft') {
+    eventEmitter.emit(Messages.HERO_MOVE_LEFT)
+  }
+});
+```
+
+माथि हामीले किबोर्ड इभेन्ट `ArrowLeft` लाई जडान गर्यौं र `HERO_MOVE_LEFT` सन्देश पठायौं। हामीले त्यो सन्देश सुन्छौं र परिणामस्वरूप `hero` लाई सार्छौं। यस प्याटर्नको बल भनेको इभेन्ट लिस्नर र नायक एक-अर्काको बारेमा थाहा नपाउनु हो। तपाईंले `ArrowLeft` लाई `A` कुञ्जीमा पुनः म्याप गर्न सक्नुहुन्छ। साथै, `ArrowLeft` मा केही पूर्ण रूपमा फरक कार्य गर्न सम्भव हुनेछ, इभेन्टEmitter को `on` फङ्सनमा केही सम्पादन गरेर:
+
+```javascript
+eventEmitter.on(Messages.HERO_MOVE_LEFT, () => {
+  hero.move(5,0);
+});
+```
+
+जब तपाईंको खेल बढ्छ र जटिल हुन्छ, यो प्याटर्न जटिलतामा स्थिर रहन्छ र तपाईंको कोड सफा रहन्छ। यो प्याटर्न अपनाउन अत्यधिक सिफारिस गरिन्छ।
+
+---
+
+## 🚀 चुनौती
+
+पब-सब प्याटर्नले खेललाई कसरी सुधार गर्न सक्छ भनेर सोच्नुहोस्। कुन भागहरूले इभेन्टहरू इमिट गर्नुपर्छ, र खेलले तिनीहरूलाई कसरी प्रतिक्रिया दिनुपर्छ? नयाँ खेलको बारेमा सोच्ने र यसको भागहरूले कसरी व्यवहार गर्न सक्छन् भनेर सिर्जनात्मक हुने समय हो।
+
+## पोस्ट-लेक्चर क्विज
+
+[पोस्ट-लेक्चर क्विज](https://ff-quizzes.netlify.app/web/quiz/30)
+
+## समीक्षा र आत्म-अध्ययन
+
+पब/सबको बारेमा थप जान्न [पढ्नुहोस्](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber/?WT.mc_id=academic-77807-sagibbon)।
+
+## असाइनमेन्ट
+
+[खेलको मॉकअप बनाउनुहोस्](assignment.md)
+
+**अस्वीकरण**:  
+यो दस्तावेज़ AI अनुवाद सेवा [Co-op Translator](https://github.com/Azure/co-op-translator) प्रयोग गरेर अनुवाद गरिएको छ। हामी यथार्थताको लागि प्रयास गर्छौं, तर कृपया ध्यान दिनुहोस् कि स्वचालित अनुवादमा त्रुटिहरू वा अशुद्धताहरू हुन सक्छ। यसको मूल भाषा मा रहेको मूल दस्तावेज़लाई आधिकारिक स्रोत मानिनुपर्छ। महत्वपूर्ण जानकारीको लागि, व्यावसायिक मानव अनुवाद सिफारिस गरिन्छ। यस अनुवादको प्रयोगबाट उत्पन्न हुने कुनै पनि गलतफहमी वा गलत व्याख्याको लागि हामी जिम्मेवार हुने छैनौं।

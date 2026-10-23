@@ -1,0 +1,236 @@
+<!--
+CO_OP_TRANSLATOR_METADATA:
+{
+  "original_hash": "d9da6dc61fb712b29f65e108c79b8a5d",
+  "translation_date": "2025-08-25T22:30:20+00:00",
+  "source_file": "6-space-game/1-introduction/README.md",
+  "language_code": "mr"
+}
+-->
+# स्पेस गेम तयार करा भाग 1: परिचय
+
+![video](../../../../6-space-game/images/pewpew.gif)
+
+## पूर्व-व्याख्यान प्रश्नमंजूषा
+
+[पूर्व-व्याख्यान प्रश्नमंजूषा](https://ff-quizzes.netlify.app/web/quiz/29)
+
+### गेम डेव्हलपमेंटमध्ये इनहेरिटन्स आणि कंपोझिशन
+
+पूर्वीच्या धड्यांमध्ये, तुम्ही तयार केलेल्या अ‍ॅप्सच्या डिझाइन आर्किटेक्चरबद्दल फारसा विचार करण्याची गरज नव्हती, कारण प्रकल्प खूपच लहान होते. परंतु, जेव्हा तुमचे अ‍ॅप्लिकेशन्स आकार आणि व्याप्तीमध्ये वाढतात, तेव्हा आर्किटेक्चरल निर्णय अधिक महत्त्वाचे होतात. जावास्क्रिप्टमध्ये मोठ्या अ‍ॅप्लिकेशन्स तयार करण्यासाठी दोन प्रमुख पद्धती आहेत: *कंपोझिशन* किंवा *इनहेरिटन्स*. दोन्ही पद्धतींचे फायदे आणि तोटे आहेत, परंतु गेमच्या संदर्भातून त्यांचे स्पष्टीकरण देऊया.
+
+✅ सर्वात प्रसिद्ध प्रोग्रामिंग पुस्तकांपैकी एक [डिझाइन पॅटर्न्स](https://en.wikipedia.org/wiki/Design_Patterns) यावर आधारित आहे.
+
+गेममध्ये तुम्हाला `गेम ऑब्जेक्ट्स` असतात, जे स्क्रीनवर असणारे ऑब्जेक्ट्स असतात. याचा अर्थ त्यांना कार्टेशियन कोऑर्डिनेट सिस्टमवर स्थान असते, ज्यामध्ये `x` आणि `y` कोऑर्डिनेट असतो. गेम विकसित करताना तुम्हाला लक्षात येईल की तुमच्या सर्व गेम ऑब्जेक्ट्समध्ये एक मानक गुणधर्म असतो, जो प्रत्येक गेमसाठी समान असतो, म्हणजेच:
+
+- **स्थान-आधारित** बहुतेक, किंवा सर्व गेम घटक स्थान-आधारित असतात. याचा अर्थ त्यांना `x` आणि `y` स्थान असते.
+- **चालणारे** हे ऑब्जेक्ट्स नवीन स्थानावर जाऊ शकतात. हे सहसा हिरो, मॉन्स्टर किंवा NPC (नॉन प्लेअर कॅरेक्टर) असते, परंतु उदाहरणार्थ, स्थिर ऑब्जेक्ट जसे की झाड नसते.
+- **स्वत: नष्ट करणारे** हे ऑब्जेक्ट्स फक्त ठराविक कालावधीसाठी अस्तित्वात असतात आणि नंतर स्वत: ला हटवण्यासाठी सेट करतात. सहसा हे `dead` किंवा `destroyed` बूलियनद्वारे दर्शवले जाते, जे गेम इंजिनला सूचित करते की हे ऑब्जेक्ट आता रेंडर केले जाऊ नये.
+- **कूल-डाउन** 'कूल-डाउन' हा अल्पकालीन ऑब्जेक्ट्समध्ये सामान्य गुणधर्म आहे. याचे एक सामान्य उदाहरण म्हणजे काही मिलीसेकंदांसाठी दिसणारा मजकूर किंवा ग्राफिकल इफेक्ट जसे की स्फोट.
+
+✅ पॅक-मॅन सारख्या गेमचा विचार करा. तुम्ही या गेममध्ये वरील चार ऑब्जेक्ट प्रकार ओळखू शकता का?
+
+### वर्तन व्यक्त करणे
+
+वरील वर्णन केलेले सर्व गेम ऑब्जेक्ट्सचे वर्तन आहे. तर आपण ते कसे कोड करतो? आपण हे वर्तन वर्ग किंवा ऑब्जेक्ट्सशी संबंधित पद्धती म्हणून व्यक्त करू शकतो.
+
+**क्लासेस**
+
+`क्लासेस` आणि `इनहेरिटन्स` चा वापर करून वर्गामध्ये विशिष्ट वर्तन जोडणे शक्य होते.
+
+✅ इनहेरिटन्स हा एक महत्त्वाचा संकल्पना आहे. [MDN च्या इनहेरिटन्सवरील लेख](https://developer.mozilla.org/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) वाचा.
+
+कोडद्वारे व्यक्त केले गेले, एक गेम ऑब्जेक्ट सहसा असे दिसते:
+
+```javascript
+
+//set up the class GameObject
+class GameObject {
+  constructor(x, y, type) {
+    this.x = x;
+    this.y = y;
+    this.type = type;
+  }
+}
+
+//this class will extend the GameObject's inherent class properties
+class Movable extends GameObject {
+  constructor(x,y, type) {
+    super(x,y, type)
+  }
+
+//this movable object can be moved on the screen
+  moveTo(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+
+//this is a specific class that extends the Movable class, so it can take advantage of all the properties that it inherits
+class Hero extends Movable {
+  constructor(x,y) {
+    super(x,y, 'Hero')
+  }
+}
+
+//this class, on the other hand, only inherits the GameObject properties
+class Tree extends GameObject {
+  constructor(x,y) {
+    super(x,y, 'Tree')
+  }
+}
+
+//a hero can move...
+const hero = new Hero();
+hero.moveTo(5,5);
+
+//but a tree cannot
+const tree = new Tree();
+```
+
+✅ काही मिनिटे घ्या आणि पॅक-मॅन हिरो (उदा. इनकी, पिंकी किंवा ब्लिंकी) जावास्क्रिप्टमध्ये कसा लिहिला जाईल याचा विचार करा.
+
+**कंपोझिशन**
+
+ऑब्जेक्ट इनहेरिटन्स हाताळण्याचा एक वेगळा मार्ग म्हणजे *कंपोझिशन*. त्यानंतर, ऑब्जेक्ट्स त्यांचे वर्तन असे व्यक्त करतात:
+
+```javascript
+//create a constant gameObject
+const gameObject = {
+  x: 0,
+  y: 0,
+  type: ''
+};
+
+//...and a constant movable
+const movable = {
+  moveTo(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+//then the constant movableObject is composed of the gameObject and movable constants
+const movableObject = {...gameObject, ...movable};
+
+//then create a function to create a new Hero who inherits the movableObject properties
+function createHero(x, y) {
+  return {
+    ...movableObject,
+    x,
+    y,
+    type: 'Hero'
+  }
+}
+//...and a static object that inherits only the gameObject properties
+function createStatic(x, y, type) {
+  return {
+    ...gameObject
+    x,
+    y,
+    type
+  }
+}
+//create the hero and move it
+const hero = createHero(10,10);
+hero.moveTo(5,5);
+//and create a static tree which only stands around
+const tree = createStatic(0,0, 'Tree'); 
+```
+
+**कोणता पॅटर्न वापरावा?**
+
+तुम्ही कोणता पॅटर्न निवडता हे तुमच्यावर अवलंबून आहे. जावास्क्रिप्ट दोन्ही पद्धतींना समर्थन देते.
+
+--
+
+गेम डेव्हलपमेंटमध्ये एक सामान्य पॅटर्न गेमचा युजर अनुभव आणि कार्यक्षमता हाताळण्याच्या समस्येचे निराकरण करते.
+
+## पब/सब पॅटर्न
+
+✅ पब/सब म्हणजे 'पब्लिश-सबस्क्राइब'
+
+हा पॅटर्न तुमच्या अ‍ॅप्लिकेशनच्या विविध भागांनी एकमेकांबद्दल माहिती नसावी या कल्पनेला संबोधित करतो. का? कारण विविध भाग वेगळे असल्यास काय चालले आहे हे समजणे सोपे होते. तसेच, तुम्हाला अचानक वर्तन बदलायचे असल्यास ते सोपे होते. आपण हे कसे साध्य करतो? काही संकल्पना स्थापित करून:
+
+- **संदेश**: संदेश सहसा एक मजकूर स्ट्रिंग असतो ज्यासह एक पर्यायी पेलोड (डेटाचा तुकडा जो संदेशाबद्दल स्पष्टता देतो). गेममधील एक सामान्य संदेश `KEY_PRESSED_ENTER` असतो.
+- **पब्लिशर**: हा घटक संदेश *पब्लिश* करतो आणि सर्व सबस्क्राइबर्सना पाठवतो.
+- **सबस्क्राइबर**: हा घटक विशिष्ट संदेश *ऐकतो* आणि तो संदेश प्राप्त झाल्यामुळे काही कार्य करतो, जसे की लेझर फायर करणे.
+
+अंमलबजावणी आकाराने खूपच लहान आहे परंतु हा एक शक्तिशाली पॅटर्न आहे. याची अंमलबजावणी कशी करता येईल:
+
+```javascript
+//set up an EventEmitter class that contains listeners
+class EventEmitter {
+  constructor() {
+    this.listeners = {};
+  }
+//when a message is received, let the listener to handle its payload
+  on(message, listener) {
+    if (!this.listeners[message]) {
+      this.listeners[message] = [];
+    }
+    this.listeners[message].push(listener);
+  }
+//when a message is sent, send it to a listener with some payload
+  emit(message, payload = null) {
+    if (this.listeners[message]) {
+      this.listeners[message].forEach(l => l(message, payload))
+    }
+  }
+}
+
+```
+
+वरील कोड वापरण्यासाठी आपण एक लहान अंमलबजावणी तयार करू शकतो:
+
+```javascript
+//set up a message structure
+const Messages = {
+  HERO_MOVE_LEFT: 'HERO_MOVE_LEFT'
+};
+//invoke the eventEmitter you set up above
+const eventEmitter = new EventEmitter();
+//set up a hero
+const hero = createHero(0,0);
+//let the eventEmitter know to watch for messages pertaining to the hero moving left, and act on it
+eventEmitter.on(Messages.HERO_MOVE_LEFT, () => {
+  hero.move(5,0);
+});
+
+//set up the window to listen for the keyup event, specifically if the left arrow is hit, emit a message to move the hero left
+window.addEventListener('keyup', (evt) => {
+  if (evt.key === 'ArrowLeft') {
+    eventEmitter.emit(Messages.HERO_MOVE_LEFT)
+  }
+});
+```
+
+वरील उदाहरणात आपण कीबोर्ड इव्हेंट `ArrowLeft` कनेक्ट करतो आणि `HERO_MOVE_LEFT` संदेश पाठवतो. आपण तो संदेश ऐकतो आणि त्याचा परिणाम म्हणून `hero` हलवतो. या पॅटर्नची ताकद अशी आहे की इव्हेंट लिसनर आणि हिरो एकमेकांबद्दल काहीही जाणत नाहीत. तुम्ही `ArrowLeft` ला `A` कीवर रीमॅप करू शकता. याशिवाय, `ArrowLeft` वर काहीतरी पूर्णपणे वेगळे करणे शक्य होईल, फक्त इव्हेंटEmitter च्या `on` फंक्शनमध्ये काही संपादने करून:
+
+```javascript
+eventEmitter.on(Messages.HERO_MOVE_LEFT, () => {
+  hero.move(5,0);
+});
+```
+
+तुमचा गेम वाढत असताना गोष्टी अधिक क्लिष्ट होत असल्या तरी, हा पॅटर्न त्याच क्लिष्टतेत राहतो आणि तुमचा कोड स्वच्छ राहतो. हा पॅटर्न स्वीकारण्याची शिफारस केली जाते.
+
+---
+
+## 🚀 आव्हान
+
+पब-सब पॅटर्न गेमला कसा सुधारू शकतो याचा विचार करा. कोणते भाग इव्हेंट्स पाठवायला हवे, आणि गेमने त्यावर कसे प्रतिक्रिया द्यायला हवे? नवीन गेमचा विचार करण्याची आणि त्याचे भाग कसे वागतील याबद्दल सर्जनशील होण्याची हीच संधी आहे.
+
+## व्याख्यानानंतरची प्रश्नमंजूषा
+
+[व्याख्यानानंतरची प्रश्नमंजूषा](https://ff-quizzes.netlify.app/web/quiz/30)
+
+## पुनरावलोकन आणि स्व-अभ्यास
+
+पब/सब बद्दल अधिक जाणून घ्या [याबद्दल वाचून](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber/?WT.mc_id=academic-77807-sagibbon).
+
+## असाइनमेंट
+
+[गेमची रूपरेषा तयार करा](assignment.md)
+
+**अस्वीकरण**:  
+हा दस्तऐवज AI भाषांतर सेवा [Co-op Translator](https://github.com/Azure/co-op-translator) वापरून भाषांतरित करण्यात आला आहे. आम्ही अचूकतेसाठी प्रयत्नशील असलो तरी कृपया लक्षात ठेवा की स्वयंचलित भाषांतरे त्रुटी किंवा अचूकतेच्या अभावाने युक्त असू शकतात. मूळ भाषेतील दस्तऐवज हा अधिकृत स्रोत मानला जावा. महत्त्वाच्या माहितीसाठी व्यावसायिक मानवी भाषांतराची शिफारस केली जाते. या भाषांतराचा वापर करून उद्भवलेल्या कोणत्याही गैरसमज किंवा चुकीच्या अर्थासाठी आम्ही जबाबदार राहणार नाही.
