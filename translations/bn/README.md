@@ -1,0 +1,265 @@
+[![GitHub license](https://img.shields.io/github/license/microsoft/Web-Dev-For-Beginners.svg)](https://github.com/microsoft/Web-Dev-For-Beginners/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/pulls/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/network/)
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/stargazers/)
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+# শুরুদের জন্য ওয়েব ডেভেলপমেন্ট - একটি পাঠ্যক্রম
+
+মাইক্রোসফট ক্লাউড অ্যাড্ভোকেটদের ১২-সপ্তাহের ব্যাপক কোর্সের মাধ্যমে ওয়েব ডেভেলপমেন্টের মৌলিক বিষয়গুলি শিখুন। ২৪টির প্রতিটি পাঠে টেরারিয়াম, ব্রাউজার এক্সটেনশন এবং স্পেস গেমের মতো হাতে-কলমে প্রকল্পের মাধ্যমে জাভাস্ক্রিপ্ট, CSS এবং HTML গভীরভাবে অনুসন্ধান করা হয়। কুইজ, আলোচনা এবং ব্যবহারিক অ্যাসাইনমেন্টের সঙ্গে যুক্ত থাকুন। আমাদের কার্যকর প্রকল্প-ভিত্তিক শিক্ষাদানের মাধ্যমে আপনার দক্ষতাগুলি উন্নত করুন এবং জ্ঞানের ধারণ ক্ষমতা অপ্টিমাইজ করুন। আজই আপনার কোডিং যাত্রা শুরু করুন!
+
+আজুর এআই ফাউন্ড্রি ডিসকর্ড কমিউনিটিতে যোগ দিন
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+এই সম্পদগুলি ব্যবহারের জন্য শুরু করার জন্য এই ধাপগুলি অনুসরণ করুন:
+1. **রিপোজিটরি ফর্ক করুন**: ক্লিক করুন [![GitHub forks](https://img.shields.io/github/forks/microsoft/Web-Dev-For-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/fork)
+2. **রিপোজিটরি ক্লোন করুন**:   `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
+3. [**আজুর এআই ফাউন্ড্রি ডিসকর্ডে যোগ দিন এবং বিশেষজ্ঞ ও সহকর্মী ডেভেলপারদের সাথে মেলামেশা করুন**](https://discord.com/invite/ByRwuEEgH4)
+
+### 🌐 বহু-ভাষা সমর্থন
+
+#### গিটহাব অ্যাকশনের মাধ্যমে সমর্থিত (স্বয়ংক্রিয় ও সর্বদা আপডেটেড)
+
+<!-- CO-OP TRANSLATOR LANGUAGES TABLE START -->
+[Arabic](../ar/README.md) | [Bengali](./README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh-CN/README.md) | [Chinese (Traditional, Hong Kong)](../zh-HK/README.md) | [Chinese (Traditional, Macau)](../zh-MO/README.md) | [Chinese (Traditional, Taiwan)](../zh-TW/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Estonian](../et/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Kannada](../kn/README.md) | [Korean](../ko/README.md) | [Lithuanian](../lt/README.md) | [Malay](../ms/README.md) | [Malayalam](../ml/README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Nigerian Pidgin](../pcm/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../pt-BR/README.md) | [Portuguese (Portugal)](../pt-PT/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Tamil](../ta/README.md) | [Telugu](../te/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
+
+> **স্থানীয়ভাবে ক্লোন করতে চান?**
+
+> এই রিপোজিটরিতে ৫০+ ভাষার অনুবাদ রয়েছে যা ডাউনলোড সাইজ উল্লেখযোগ্যভাবে বৃদ্ধি করে। অনুবাদ ব্যতীত ক্লোন করতে sparse checkout ব্যবহার করুন:
+> ```bash
+> git clone --filter=blob:none --sparse https://github.com/microsoft/Web-Dev-For-Beginners.git
+> cd Web-Dev-For-Beginners
+> git sparse-checkout set --no-cone '/*' '!translations' '!translated_images'
+> ```
+> এটি আপনাকে কোর্স সম্পন্ন করার জন্য প্রয়োজনীয় সবকিছু দ্রুত ডাউনলোড করার সুযোগ দেয়।
+<!-- CO-OP TRANSLATOR LANGUAGES TABLE END -->
+
+**যদি আপনি অতিরিক্ত অনুবাদের ভাষাগুলি চান, তাহলে সেগুলি এখানে তালিকাভুক্ত আছে [here](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+
+[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/microsoft/Web-Dev-For-Beginners)
+
+#### 🧑‍🎓 _আপনি কি একজন ছাত্র?_
+
+[**স্টুডেন্ট হাব পেজ**](https://docs.microsoft.com/learn/student-hub/?WT.mc_id=academic-77807-sagibbon) পরিদর্শন করুন যেখানে আপনি শুরুদের জন্য সম্পদ, স্টুডেন্ট প্যাক এবং এমনকি একটি ফ্রি সার্টিফিকেট ভাউচারের পথ খুঁজে পাবেন। এটি এমন একটি পৃষ্ঠাগুলো যার বুকমার্ক রাখতে এবং মাঝে মাঝে চেক করতে চান কারণ আমরা প্রতি মাসে বিষয়বস্তু পরিবর্তন করি।
+
+### 📣 ঘোষণা - নতুন গিটহাব কপিলট এজেন্ট মোড চ্যালেঞ্জগুলি সম্পন্ন করার জন্য!
+
+নতুন চ্যালেঞ্জ যোগ করা হয়েছে, বেশিরভাগ অধ্যায়ে "GitHub Copilot Agent Challenge 🚀" খুঁজুন। এটি গিটহাব কপিলট এবং এজেন্ট মোড ব্যবহার করে আপনার সম্পন্ন করার জন্য একটি নতুন চ্যালেঞ্জ। যদি আপনি আগে কখনও এজেন্ট মোড ব্যবহার না করে থাকেন, এটি শুধুমাত্র টেক্সট তৈরি করে না বরং ফাইল তৈরি ও সম্পাদনা করতে, কমান্ড চালাতে এবং আরও অনেক কিছু করতে সক্ষম।
+
+### 📣 ঘোষণা - _জেনারেটিভ এআই ব্যবহার করে নতুন প্রজেক্ট_
+
+নতুন এআই অ্যাসিস্ট্যান্ট প্রকল্প যুক্ত হয়েছে, এটি দেখুন [project](./9-chat-project/README.md)
+
+### 📣 ঘোষণা - _জেনারেটিভ এআই এর জন্য নতুন পাঠ্যক্রম_ জাভাস্ক্রিপ্টের জন্য সম্প্রতি প্রকাশিত হয়েছে
+
+আমাদের নতুন জেনারেটিভ এআই পাঠ্যক্রম মিস করবেন না!
+
+শুরু করতে পরিদর্শন করুন [https://aka.ms/genai-js-course](https://aka.ms/genai-js-course) !
+
+![Background](../../translated_images/bn/background.148a8d43afde5730.webp)
+
+- মৌলিক থেকে RAG পর্যন্ত সবকিছু নিয়ে পাঠ।
+- জেনএআই এবং আমাদের সঙ্গী অ্যাপ ব্যবহার করে ঐতিহাসিক চরিত্রের সাথে আলাপচারিতা।
+- মজাদার এবং আকর্ষণীয় গল্প, আপনি সময় ভ্রমণ করবেন!
+
+![character](../../translated_images/bn/character.5c0dd8e067ffd693.webp)
+
+প্রতিটি পাঠে একটি অ্যাসাইনমেন্ট সম্পন্ন করতে হবে, একটি জ্ঞান পরীক্ষা এবং একটি চ্যালেঞ্জ যা আপনাকে নিম্নলিখিত বিষয় শিখতে সাহায্য করবে:
+- প্রম্পটিং এবং প্রম্পট ইঞ্জিনিয়ারিং
+- টেক্সট এবং ইমেজ অ্যাপ তৈরি
+- সার্চ অ্যাপ
+
+শুরু করতে পরিদর্শন করুন [https://aka.ms/genai-js-course](../../[https:/aka.ms/genai-js-course) !
+
+## 🌱 শুরু করা
+
+> **শিক্ষকবৃন্দ**, এই পাঠ্যক্রম ব্যবহারের জন্য আমরা কিছু [পরামর্শ](for-teachers.md) অন্তর্ভুক্ত করেছি। আপনার মতামত আমাদের [আলোচনা форуমে](https://github.com/microsoft/Web-Dev-For-Beginners/discussions/categories/teacher-corner) শেয়ার করুন!
+
+**[শিক্ষার্থীবৃন্দ](https://aka.ms/student-page/?WT.mc_id=academic-77807-sagibbon)**, প্রতিটি পাঠের জন্য, একটি প্রাক-লেকচার কুইজ দিয়ে শুরু করুন এবং লেকচার ম্যাটেরিয়াল পড়া, বিভিন্ন কার্যক্রম সম্পূর্ণ করা এবং পোস্ট-লেকচার কুইজের মাধ্যমে আপনার বোঝাপড়া যাচাই করুন।
+
+আপনার শেখার অভিজ্ঞতা উন্নত করতে, আপনার সহপাঠীদের সাথে মিলে প্রকল্পগুলিতে কাজ করুন! আমাদের [আলোচনা ফোরাম](https://github.com/microsoft/Web-Dev-For-Beginners/discussions) এ আলোচনা করা হয়, যেখানে আমাদের মডারেটর দল আপনার প্রশ্নের উত্তর দেওয়ার জন্য উপলব্ধ থাকবে।
+
+আপনার শিক্ষাকে আরও এগিয়ে নিয়ে যেতে, অতিরিক্ত অধ্যয়ন সামগ্রী জন্য আমরা দৃঢ়ভাবে পরামর্শ দিচ্ছি [Microsoft Learn](https://learn.microsoft.com/users/wirelesslife/collections/p1ddcy5jwy0jkm?WT.mc_id=academic-77807-sagibbon) অন্বেষণ করতে।
+
+### 📋 আপনার পরিবেশ সেট আপ করা
+
+এই পাঠ্যক্রমের একটি ডেভেলপমেন্ট পরিবেশ প্রস্তুত রয়েছে! শুরু করার সময় আপনি কোর্সটি চালাতে পারেন একটি [কোডস্পেসে](https://github.com/features/codespaces/) (_একটি ব্রাউজার-ভিত্তিক, কোনো ইনস্টলেশন ছাড়াই পরিবেশ_), অথবা আপনার কম্পিউটারে লোকালভাবে একটি টেক্সট এডিটর যেমন [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) ব্যবহার করে।
+
+#### আপনার রিপোজিটরি তৈরি করুন
+আপনার কাজ সহজে সংরক্ষণ করার জন্য, এই রিপোজিটরিটির নিজস্ব একটি কপি তৈরি করাই প্রস্তাবিত। আপনি এটি করতে পারেন পাতার উপরের দিকে থাকা **Use this template** বোতামে ক্লিক করে। এটি আপনার GitHub অ্যাকাউন্টে পাঠ্যক্রমের একটি কপি সহ একটি নতুন রিপোজিটরি তৈরি করবে।
+
+এই ধাপগুলি অনুসরণ করুন:
+1. **রিপোজিটরি ফর্ক করুন**: এই পৃষ্ঠার উপরের ডানদিকে থাকা "Fork" বোতামে ক্লিক করুন।
+2. **রিপোজিটরি ক্লোন করুন**:   `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
+
+#### কোডস্পেসে পাঠ্যক্রম চালানো
+
+আপনি যে রিপোজিটোরিটির কপি তৈরি করেছেন, সেখানে **Code** বোতামে ক্লিক করুন এবং **Open with Codespaces** নির্বাচন করুন। এটি আপনাকে কাজ করার জন্য একটি নতুন কোডস্পেস তৈরি করবে।
+
+![Codespace](../../translated_images/bn/createcodespace.0238bbf4d7a8d955.webp)
+
+#### আপনার কম্পিউটারে লোকালভাবে পাঠ্যক্রম চালানো
+
+এই পাঠ্যক্রম আপনার কম্পিউটারে চালাতে, আপনার দরকার একটি টেক্সট এডিটর, একটি ব্রাউজার এবং একটি কমান্ড লাইন টুল। আমাদের প্রথম পাঠ, [প্রোগ্রামিং ভাষা ও সরঞ্জাম পরিচিতি](../../1-getting-started-lessons/1-intro-to-programming-languages), আপনাকে বিভিন্ন বিকল্প সম্পর্কে গাইড করবে যা আপনার জন্য সবচেয়ে উপযুক্ত তা নির্বাচন করতে সাহায্য করবে।
+
+আমাদের প্রস্তাবনা হল [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) ব্যবহার করা, যা একটি বিল্ট-ইন [টার্মিনাল](https://code.visualstudio.com/docs/terminal/basics/?WT.mc_id=academic-77807-sagibbon) দিয়ে আসে। আপনি Visual Studio Code ডাউনলোড করতে পারেন [এখান থেকে](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon)।
+
+1. আপনার রিপোজিটরি ক্লোন করুন আপনার কম্পিউটারে। এটি করতে পারেন **Code** বোতামে ক্লিক করে URL কপি করে:
+
+    [CodeSpace](./images/createcodespace.png)
+তারপরে, [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) এর মধ্যে [Terminal](https://code.visualstudio.com/docs/terminal/basics/?WT.mc_id=academic-77807-sagibbon) খুলুন এবং নিম্নলিখিত কমান্ডটি চালান, `<your-repository-url>` এর জায়গায় আপনি যা URL কপি করেছেন তা প্রতিস্থাপন করুন:
+
+    ```bash 
+    git clone <your-repository-url>
+    ```
+
+২. Visual Studio Code-এ ফোল্ডারটি খুলুন। আপনি **File** > **Open Folder** ক্লিক করে এবং আপনি যেই ফোল্ডার ক্লোন করেছেন তা নির্বাচন করে এটি করতে পারেন।
+
+>  সুপারিশকৃত Visual Studio Code এক্সটেনশনসমূহ:
+>
+> * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&WT.mc_id=academic-77807-sagibbon) - Visual Studio Code এর মধ্যে HTML পেজ পূর্বদর্শন করার জন্য
+> * [Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&WT.mc_id=academic-77807-sagibbon) - দ্রুত কোড লেখার জন্য সাহায্য করার জন্য
+
+## 📂 প্রতিটি পাঠের মধ্যে রয়েছে:
+
+- ঐচ্ছিক স্কেচনোট
+- ঐচ্ছিক সহায়ক ভিডিও
+- পাঠ পূর্ববর্তী ওয়ার্মআপ কুইজ
+- লিখিত পাঠ
+- প্রকল্প ভিত্তিক পাঠের জন্য, প্রকল্প নির্মাণের ধাপে ধাপে নির্দেশিকা
+- জ্ঞানের পরীক্ষা
+- একটি চ্যালেঞ্জ
+- সহায়ক পাঠ
+- অ্যাসাইনমেন্ট
+- [পাঠোত্তর কুইজ](https://ff-quizzes.netlify.app/web/)
+
+> **কুইজের সম্পর্কিত একটি নোট**: সকল কুইজ কুইজ-অ্যাপ ফোল্ডারে রয়েছে, মোট ৪৮টি কুইজ जिसमें প্রতিটিতে তিনটি প্রশ্ন থাকে। এগুলো এখানে পাওয়া যায় [এখানে](https://ff-quizzes.netlify.app/web/)। কুইজ অ্যাপটি লোকালভাবে চালানো যায় অথবা Azure-তে ডিপ্লয় করা যায়; `quiz-app` ফোল্ডারের নির্দেশিকাগুলি অনুসরণ করুন।
+
+## 🗃️ পাঠসমূহ
+
+|     |                       প্রকল্পের নাম                       |                            শেখানো বিষয়সমূহ                             | শেখার উদ্দেশ্য                                                                                                                 |                                                         সংযুক্ত পাঠ                                                          |         লেখক          |
+| :-: | :------------------------------------------------------: | :--------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------: | :---------------------: |
+| ০১  |                     Getting Started                      |           প্রোগ্রামিং পরিচিতি এবং যন্ত্রপাতির পরিচিতি           | প্রোগ্রামিং ভাষাগুলির প্রাথমিক বিবরণ এবং পেশাদার ডেভেলপারদের কাজ সাপোর্টকারী সফটওয়্যার সম্বন্ধে শেখা | [Intro to Programming Languages and Tools of the Trade](./1-getting-started-lessons/1-intro-to-programming-languages/README.md) |         Jasmine         |
+| ০২  |                     Getting Started                      |             GitHub এর মৌলিক, দলের সাথে কাজ করার ধাপ             | আপনার প্রকল্পে GitHub কিভাবে ব্যবহার করবেন, কোডবেসে অন্যদের সাথে কিভাবে সহযোগিতা করবেন                                          |                            [Intro to GitHub](./1-getting-started-lessons/2-github-basics/README.md)                             |          Floor          |
+| ০৩  |                     Getting Started                      |                             অ্যাক্সেসিবিলিটি                              | ওয়েব অ্যাক্সেসিবিলিটির মৌলিক বিষয়গুলো শেখা                                                                                               |                       [Accessibility Fundamentals](./1-getting-started-lessons/3-accessibility/README.md)                       |       Christopher       |
+| ০৪  |                        JS Basics                         |                         JavaScript ডেটা টাইপ                          | JavaScript এর ডেটা টাইপের প্রাথমিক জ্ঞান                                                                                                 |                                       [Data Types](./2-js-basics/1-data-types/README.md)                                        |         Jasmine         |
+| ০৫  |                        JS Basics                         |                         ফাংশন এবং মেথড                          | অ্যাপ্লিকেশনের লজিক প্রবাহ নিয়ন্ত্রণের জন্য ফাংশন এবং মেথড সম্পর্কে শেখা                                                             |                              [Functions and Methods](./2-js-basics/2-functions-methods/README.md)                               | Jasmine and Christopher |
+| ০৬  |                        JS Basics                         |                        JS দিয়ে সিদ্ধান্ত নেওয়া                        | কোডে শর্ত তৈরি করার জন্য সিদ্ধান্ত গ্রহণ পদ্ধতি শেখা                                                           |                                 [Making Decisions](./2-js-basics/3-making-decisions/README.md)                                  |         Jasmine         |
+| ০৭  |                        JS Basics                         |                            অ্যারে এবং লুপ                            | JavaScript-এ অ্যারে এবং লুপ ব্যবহার করে ডেটা নিয়ে কাজ করা                                                                                 |                                   [Arrays and Loops](./2-js-basics/4-arrays-loops/README.md)                                    |         Jasmine         |
+| ০৮  |       [Terrarium](./3-terrarium/solution/README.md)       |                            HTML অনুশীলন                            | একটি অনলাইন টেরারিয়াম তৈরির জন্য HTML নির্মাণ, মূলত লেআউট নির্মাণে ফোকাস                                                         |                                 [Introduction to HTML](./3-terrarium/1-intro-to-html/README.md)                                 |           Jen           |
+| ০৯  |       [Terrarium](./3-terrarium/solution/README.md)       |                            CSS অনুশীলন                             | পরিষ্কার এবং রেসপন্সিভ পেজ তৈরির জন্য CSS নির্মাণের মৌলিক বিষয় শেখা                     |                                  [Introduction to CSS](./3-terrarium/2-intro-to-css/README.md)                                  |           Jen           |
+| ১০  |            [Terrarium](./3-terrarium/solution/README.md)            |                 JavaScript ক্লোজার, DOM নিয়ন্ত্রণ                  | টেরারিয়ামকে ড্র্যাগ/ড্রপ ইন্টারফেস বানাতে JavaScript নির্মাণ, ক্লোজার এবং DOM নিয়ন্ত্রণে ফোকাস             |                  [JavaScript Closures, DOM manipulation](./3-terrarium/3-intro-to-DOM-and-closures/README.md)                   |           Jen           |
+| ১১  |          [Typing Game](./4-typing-game/solution/README.md)          |                          টাইপিং গেম তৈরি                           | কী বোর্ড ইভেন্ট ব্যবহার করে JavaScript অ্যাপ এর লজিক চালানো শেখা                                                          |                                [Event-Driven Programming](./4-typing-game/typing-game/README.md)                                |       Christopher       |
+| ১২  | [Green Browser Extension](./5-browser-extension/solution/README.md) |                         ব্রাউজার নিয়ে কাজ                          | ব্রাউজার কিভাবে কাজ করে, ইতিহাস এবং ব্রাউজার এক্সটেনশন এর প্রথম উপাদানগুলি তৈরি শেখা                               |                               [About Browsers](./5-browser-extension/1-about-browsers/README.md)                                |           Jen           |
+| ১৩  | [Green Browser Extension](./5-browser-extension/solution/README.md) | API কল ও লোকাল স্টোরেজে ভেরিয়েবল সংরক্ষণ | ব্রাউজার এক্সটেনশনের JavaScript অংশ তৈরি করে API কল করা এবং লোকাল স্টোরেজে ভেরিয়েবল ব্যবহার শেখা                      |                [APIs, Forms, and Local Storage](./5-browser-extension/2-forms-browsers-local-storage/README.md)                 |           Jen           |
+| ১৪  | [Green Browser Extension](./5-browser-extension/solution/README.md) |          ব্রাউজারের ব্যাকগ্রাউন্ড প্রসেস, ওয়েব পারফরমেন্স          | এক্সটেনশনের আইকন পরিচালনার জন্য ব্রাউজারের ব্যাকগ্রাউন্ড প্রসেস ব্যবহার, ওয়েব পারফরমেন্স এবং অপ্টিমাইজেশন শেখা   |             [Background Tasks and Performance](./5-browser-extension/3-background-tasks-and-performance/README.md)              |           Jen           |
+| ১৫  |           [Space Game](./6-space-game/solution/README.md)           |             JavaScript দিয়ে উন্নত গেম ডেভেলপমেন্ট             | ক্লাস এবং কম্পোজিশন ব্যবহার করে ইনহেরিটেন্স এবং Pub/Sub প্যাটার্ন শেখা, গেম নির্মাণের প্রস্তুতি              |                      [Introduction to Advanced Game Development](./6-space-game/1-introduction/README.md)                       |          Chris          |
+| ১৬  |           [Space Game](./6-space-game/solution/README.md)           |                           ক্যানভাসে ড্রয়িং                            | স্ক্রীনে ড্রয়িং করার জন্য Canvas API শেখা                                                                       |                                [Drawing to Canvas](./6-space-game/2-drawing-to-canvas/README.md)                                |          Chris          |
+| ১৭  |           [Space Game](./6-space-game/solution/README.md)           |                   স্ক্রীনে উপাদান সরানো                    | কিভাবে উপাদান কার্টেসিয়ান কোঅর্ডিনেটস এবং Canvas API ব্যবহার করে গতিশীল হয় তা খুঁজে বের করা                                            |                           [Moving Elements Around](./6-space-game/3-moving-elements-around/README.md)                           |          Chris          |
+| ১৮  |           [Space Game](./6-space-game/solution/README.md)           |                          সংঘর্ষ সনাক্তকরণ                           | কী প্রেস ব্যবহার করে উপাদানগুলোর সংঘর্ষ ঘটানো এবং পারস্পরিক প্রতিক্রিয়া দেখা, পারফরম্যান্স রক্ষা করার জন্য কুলডাউন ফাংশন যুক্ত করা    |                              [Collision Detection](./6-space-game/4-collision-detection/README.md)                              |          Chris          |
+| ১৯  |           [Space Game](./6-space-game/solution/README.md)           |                             স্কোর রাখা                              | গেমের অবস্থা ও পারফরমেন্সের ভিত্তিতে গাণিতিক হিসাব করা                                                                |                                    [Keeping Score](./6-space-game/5-keeping-score/README.md)                                    |          Chris          |
+| ২০  |           [Space Game](./6-space-game/solution/README.md)           |                     গেম শেষ করা ও পুনরায় চালু করা                     | গেম শেষ ও পুনরায় শুরু করার পদ্ধতি শেখা, একসেট পরিষ্কারকরণ ও ভেরিয়েবল রিসেট করা                              |                                [The Ending Condition](./6-space-game/6-end-condition/README.md)                                 |          Chris          |
+| ২১  |         [Banking App](./7-bank-project/solution/README.md)          |                 ওয়েব অ্যাপে HTML টেমপ্লেট এবং রুটিং                 | মাল্টিপেজ ওয়েবসাইটের কাঠামো তৈরির জন্য রুটিং ও HTML টেমপ্লেট ব্যবহারের পদ্ধতি শেখা                             |                            [HTML Templates and Routes](./7-bank-project/1-template-route/README.md)                             |          Yohan          |
+| ২২  |         [Banking App](./7-bank-project/solution/README.md)          |                  লগইন এবং রেজিস্ট্রেশন ফর্ম তৈরি                   | ফর্ম তৈরি এবং ভ্যালিডেশন পদ্ধতি শেখা                                                                          |                                           [Forms](./7-bank-project/2-forms/README.md)                                           |          Yohan          |
+| ২৩  |         [Banking App](./7-bank-project/solution/README.md)          |                   ডেটা আহরণ ও ব্যবহার পদ্ধতি                   | অ্যাপ থেকে কিভাবে ডেটা আসছে ও যাচ্ছে, এটি কিভাবে আহরণ, সংরক্ষণ এবং অপসারণ করা হয় তা শেখা                                                 |                                            [Data](./7-bank-project/3-data/README.md)                                            |          Yohan          |
+| ২৪  |         [Banking App](./7-bank-project/solution/README.md)          |                      স্টেট ম্যানেজমেন্টের ধারণা                      | অ্যাপ কিভাবে তার স্টেট সংরক্ষণ করে এবং প্রোগ্রাম্যাটিক্যালি এটি কিভাবে ম্যানেজ করা হয় তা শেখা                                                              |                                [State Management](./7-bank-project/4-state-management/README.md)                                |          Yohan          |
+| ২৫ | [Browser/VScode Code](../../8-code-editor) | VScode এর সাথে কাজ করা | কিভাবে কোড এডিটর ব্যবহার করবেন তা শেখা| [Use VScode Code Editor](./8-code-editor/1-using-a-code-editor/README.md) | Chris |
+| ২৬ | [AI Assistants](./9-chat-project/README.md) | AI-এর সাথে কাজ করা | নিজের AI সহকারী তৈরি করা শেখা | [AI Assistant project](./9-chat-project/README.md) | Chris |
+
+## 🏫 শিক্ষণ পদ্ধতি
+
+আমাদের পাঠ্যক্রম দুটি মূল শিক্ষণ নীতির উপর ভিত্তি করে ডিজাইন করা হয়েছে:
+* প্রকল্প-ভিত্তিক শেখা
+* ঘন ঘন কুইজ
+
+এই প্রোগ্রাম JavaScript, HTML, এবং CSS এর ভিত্তি শেখায়, পাশাপাশি আজকের ওয়েব ডেভেলপারদের ব্যবহৃত সর্বশেষ টুলস ও কৌশল। শিক্ষার্থীরা টাইপিং গেম, ভার্চুয়াল টেরারিয়াম, ইকো-ফ্রেন্ডলি ব্রাউজার এক্সটেনশন, স্পেস-ইনভেডার ধাঁচের গেম এবং ব্যবসায়িকদের জন্য ব্যাংকিং অ্যাপ নির্মাণ করে হাতে-কলমে অভিজ্ঞতা অর্জন করবে। সিরিজের শেষে, শিক্ষার্থীরা ওয়েব ডেভেলপমেন্টের শক্তিশালী ধারণা অর্জন করবে।
+
+> 🎓 আপনি মাইক্রোসফট লার্নে এই পাঠ্যক্রমের প্রথম কয়েকটি পাঠ [Learn Path](https://docs.microsoft.com/learn/paths/web-development-101/?WT.mc_id=academic-77807-sagibbon) হিসেবে নিতে পারেন!
+
+প্রকল্পসমূহের সাথে সামঞ্জস্য রেখে বিষয়বস্তু নিশ্চিত করার মাধ্যমে ছাত্রদের জন্য শেখার প্রক্রিয়া আরও আকর্ষণীয় হয় এবং ধারণাগুলো দীর্ঘস্থায়ী হয়। আমরা JavaScript মৌলিক বিষয়গুলো উপস্থাপনের জন্য কয়েকটি প্রারম্ভিক পাঠ এবং Microsoft এর "[Beginners Series to: JavaScript](https://channel9.msdn.com/Series/Beginners-Series-to-JavaScript/?WT.mc_id=academic-77807-sagibbon)" ভিডিও টিউটোরিয়াল সংগ্রহ থেকে একটি ভিডিও সংযুক্ত করেছি, যাদের কয়েকজন লেখক এই পাঠ্যক্রমে অবদান রেখেছেন।
+
+এছাড়াও, একটি ক্লাসের আগে একটি কম চাপের কুইজ শিক্ষার্থীর মনোভাব তৈরি করে শিক্ষার উদ্দেশ্যে মনোনিবেশ করতে সাহায্য করে এবং ক্লাসের পরে দ্বিতীয় কুইজ বিষয়বস্তু সংরক্ষণ নিশ্চিত করে। এই পাঠ্যক্রমটি নমনীয় এবং মজাদার করে ডিজাইন করা হয়েছে এবং সম্পূর্ণ বা আংশিক অংশ হিসেবে নেওয়া যেতে পারে। প্রকল্পগুলো ছোট থেকে শুরু করে ১২ সপ্তাহের শেষে ক্রমশ জটিল হয়ে ওঠে।
+
+আমরা উদ্দেশ্যগতভাবে JavaScript ফ্রেমওয়ার্কগুলো অন্তর্ভুক্ত করা থেকে বিরত থেকেছি যাতে প্রাথমিক দক্ষতাগুলো অর্জন করা যায়, যা ওয়েব ডেভেলপার হিসেবে ফ্রেমওয়ার্ক গ্রহণের পূর্বে প্রয়োজনীয়। এই পাঠ্যক্রম সম্পন্ন করার জন্য পরবর্তী ভালো পদক্ষেপ হতে পারে Node.js শেখা, যা আরেকটি ভিডিও সংকলন "[Beginner Series to: Node.js](https://channel9.msdn.com/Series/Beginners-Series-to-Nodejs/?WT.mc_id=academic-77807-sagibbon)" দ্বারা করা যায়।
+
+> আমাদের [Code of Conduct](CODE_OF_CONDUCT.md) ও [Contributing](CONTRIBUTING.md) নির্দেশিকা দেখুন। আমরা আপনার গঠনমূলক প্রতিক্রিয়াকে স্বাগত জানাই!
+
+
+## 🧭 অফলাইন অ্যাক্সেস
+
+আপনি [Docsify](https://docsify.js.org/#/) ব্যবহার করে এই ডকুমেন্টেশন অফলাইনে চালাতে পারেন। এই রিপো ফর্ক করুন, আপনার লোকাল যন্ত্রে [Docsify ইনস্টল](https://docsify.js.org/#/quickstart) করুন, এবং তারপর এই রিপোর মূল ফোল্ডারে `docsify serve` কমান্ড টাইপ করুন। ওয়েবসাইটটি আপনার লোকালহোস্টে পোর্ট ৩০০০-এ চালু হবে: `localhost:3000`।
+
+## 📘 PDF
+
+সমস্ত পাঠের PDF এখানে পাওয়া যাবে [এখানে](https://microsoft.github.io/Web-Dev-For-Beginners/pdf/readme.pdf)।
+
+## 🎒 অন্যান্য কোর্সসমূহ
+আমাদের দল অন্যান্য কোর্সও তৈরি করে! দেখুন:
+
+<!-- CO-OP TRANSLATOR OTHER COURSES START -->
+### LangChain
+[![LangChain4j for Beginners](https://img.shields.io/badge/LangChain4j%20for%20Beginners-22C55E?style=for-the-badge&&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchain4j-for-beginners)
+[![LangChain.js for Beginners](https://img.shields.io/badge/LangChain.js%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchainjs-for-beginners?WT.mc_id=m365-94501-dwahlin)
+
+---
+
+### Azure / Edge / MCP / Agents
+[![AZD for Beginners](https://img.shields.io/badge/AZD%20for%20Beginners-0078D4?style=for-the-badge&labelColor=E5E7EB&color=0078D4)](https://github.com/microsoft/AZD-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![Edge AI for Beginners](https://img.shields.io/badge/Edge%20AI%20for%20Beginners-00B8E4?style=for-the-badge&labelColor=E5E7EB&color=00B8E4)](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![MCP for Beginners](https://img.shields.io/badge/MCP%20for%20Beginners-009688?style=for-the-badge&labelColor=E5E7EB&color=009688)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![AI Agents for Beginners](https://img.shields.io/badge/AI%20Agents%20for%20Beginners-00C49A?style=for-the-badge&labelColor=E5E7EB&color=00C49A)](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### Generative AI Series
+[![Generative AI for Beginners](https://img.shields.io/badge/Generative%20AI%20for%20Beginners-8B5CF6?style=for-the-badge&labelColor=E5E7EB&color=8B5CF6)](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (.NET)](https://img.shields.io/badge/Generative%20AI%20(.NET)-9333EA?style=for-the-badge&labelColor=E5E7EB&color=9333EA)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (Java)](https://img.shields.io/badge/Generative%20AI%20(Java)-C084FC?style=for-the-badge&labelColor=E5E7EB&color=C084FC)](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (JavaScript)](https://img.shields.io/badge/Generative%20AI%20(JavaScript)-E879F9?style=for-the-badge&labelColor=E5E7EB&color=E879F9)](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### Core Learning
+[![ML for Beginners](https://img.shields.io/badge/ML%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=22C55E)](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+[![Data Science for Beginners](https://img.shields.io/badge/Data%20Science%20for%20Beginners-84CC16?style=for-the-badge&labelColor=E5E7EB&color=84CC16)](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+[![AI for Beginners](https://img.shields.io/badge/AI%20for%20Beginners-A3E635?style=for-the-badge&labelColor=E5E7EB&color=A3E635)](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+[![Cybersecurity for Beginners](https://img.shields.io/badge/Cybersecurity%20for%20Beginners-F97316?style=for-the-badge&labelColor=E5E7EB&color=F97316)](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
+[![Web Dev for Beginners](https://img.shields.io/badge/Web%20Dev%20for%20Beginners-EC4899?style=for-the-badge&labelColor=E5E7EB&color=EC4899)](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+[![IoT for Beginners](https://img.shields.io/badge/IoT%20for%20Beginners-14B8A6?style=for-the-badge&labelColor=E5E7EB&color=14B8A6)](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+[![XR Development for Beginners](https://img.shields.io/badge/XR%20Development%20for%20Beginners-38BDF8?style=for-the-badge&labelColor=E5E7EB&color=38BDF8)](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### Copilot Series
+[![Copilot for AI Paired Programming](https://img.shields.io/badge/Copilot%20for%20AI%20Paired%20Programming-FACC15?style=for-the-badge&labelColor=E5E7EB&color=FACC15)](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+[![Copilot for C#/.NET](https://img.shields.io/badge/Copilot%20for%20C%23/.NET-FBBF24?style=for-the-badge&labelColor=E5E7EB&color=FBBF24)](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+[![Copilot Adventure](https://img.shields.io/badge/Copilot%20Adventure-FDE68A?style=for-the-badge&labelColor=E5E7EB&color=FDE68A)](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+<!-- CO-OP TRANSLATOR OTHER COURSES END -->
+
+## সাহায্য নেওয়া
+
+যদি আপনি আটকে যান অথবা AI অ্যাপ তৈরি সম্পর্কে আপনার কোনো প্রশ্ন থাকে, তবে MCP নিয়ে আলাপ-আলোচনায় অংশ নিতে সহপাঠী শিক্ষার্থী এবং অভিজ্ঞ ডেভেলপারদের সাথে যোগ দিন। এটি একটি সহায়ক কমিউনিটি যেখানে প্রশ্ন করা স্বাগত এবং জ্ঞান বিনামূল্যে শেয়ার করা হয়।
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+যদি আপনার প্রোডাক্ট ফিডব্যাক থাকে অথবা নির্মাণের সময় কোনো ত্রুটি হয় তবে এখানে যান:
+
+[![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
+
+## লাইসেন্স
+
+এই রিপোজিটরিটি MIT লাইসেন্সের অধীনে লাইসেন্সকৃত। আরও তথ্যের জন্য [LICENSE](../../LICENSE) ফাইলটি দেখুন।
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**জিজ্ঞাসা**:
+এই ডকুমেন্টটি AI অনুবাদ সেবা [Co-op Translator](https://github.com/Azure/co-op-translator) ব্যবহার করে অনূদিত হয়েছে। আমরা স্বচ্ছতা এবং সঠিকতার জন্য চেষ্টা করি, কিন্তু স্বয়ংক্রিয় অনুবাদে ভুল বা অসম্পূর্ণতা থাকতে পারে। মূল ডকুমেন্ট তার নিজস্ব ভাষায় প্রামাণিক উৎস হিসাবে বিবেচিত হওয়া উচিত। গুরুত্বপূর্ণ তথ্যের জন্য পেশাদার মানব অনুবাদের পরামর্শ দেওয়া হয়। এই অনুবাদের ব্যবহারে কোনো ভুল বোঝাবুঝি বা ভুল ব্যাখ্যার জন্য আমরা দায়বদ্ধ নই।
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->
