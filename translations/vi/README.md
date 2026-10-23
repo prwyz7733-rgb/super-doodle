@@ -1,0 +1,270 @@
+[![Giấy phép GitHub](https://img.shields.io/github/license/microsoft/Web-Dev-For-Beginners.svg)](https://github.com/microsoft/Web-Dev-For-Beginners/blob/master/LICENSE)
+[![Người đóng góp GitHub](https://img.shields.io/github/contributors/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/graphs/contributors/)
+[![Vấn đề GitHub](https://img.shields.io/github/issues/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/issues/)
+[![Yêu cầu kéo GitHub](https://img.shields.io/github/issues-pr/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/pulls/)
+[![Chào đón PR](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![Người theo dõi GitHub](https://img.shields.io/github/watchers/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/watchers/)
+[![Nhánh GitHub](https://img.shields.io/github/forks/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/network/)
+[![Sao GitHub](https://img.shields.io/github/stars/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/stargazers/)
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+# Phát triển Web cho Người mới bắt đầu - Một Chương trình học
+
+Học các kiến thức cơ bản về phát triển web qua khóa học toàn diện 12 tuần của các Chuyên gia Microsoft Cloud Advocates. Mỗi trong số 24 bài học sẽ đi sâu vào JavaScript, CSS, và HTML thông qua các dự án thực hành như terrarium, tiện ích mở rộng trình duyệt, và trò chơi không gian. Tham gia các bài kiểm tra, thảo luận, và bài tập thực tế. Nâng cao kỹ năng và tối ưu khả năng ghi nhớ kiến thức với phương pháp học tập dựa trên dự án hiệu quả của chúng tôi. Bắt đầu hành trình lập trình của bạn ngay hôm nay!
+
+Tham gia Cộng đồng Discord Azure AI Foundry
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+Thực hiện các bước sau để bắt đầu sử dụng các tài nguyên này:
+1. **Tạo Nhánh Repository**: Nhấp vào [![Nhánh GitHub](https://img.shields.io/github/forks/microsoft/Web-Dev-For-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/fork)
+2. **Sao chép Repository**:   `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
+3. [**Tham gia Azure AI Foundry Discord và gặp gỡ các chuyên gia và đồng hành phát triển**](https://discord.com/invite/ByRwuEEgH4)
+
+### 🌐 Hỗ trợ Đa Ngôn ngữ
+
+#### Hỗ trợ qua GitHub Action (Tự động & Luôn Cập nhật)
+
+<!-- CO-OP TRANSLATOR LANGUAGES TABLE START -->
+[Tiếng Ả Rập](../ar/README.md) | [Tiếng Bengal](../bn/README.md) | [Tiếng Bulgaria](../bg/README.md) | [Tiếng Miến Điện (Myanmar)](../my/README.md) | [Tiếng Trung (Giản thể)](../zh-CN/README.md) | [Tiếng Trung (Phồn thể, Hồng Kông)](../zh-HK/README.md) | [Tiếng Trung (Phồn thể, Macau)](../zh-MO/README.md) | [Tiếng Trung (Phồn thể, Đài Loan)](../zh-TW/README.md) | [Tiếng Croatia](../hr/README.md) | [Tiếng Séc](../cs/README.md) | [Tiếng Đan Mạch](../da/README.md) | [Tiếng Hà Lan](../nl/README.md) | [Tiếng Estonia](../et/README.md) | [Tiếng Phần Lan](../fi/README.md) | [Tiếng Pháp](../fr/README.md) | [Tiếng Đức](../de/README.md) | [Tiếng Hy Lạp](../el/README.md) | [Tiếng Do Thái](../he/README.md) | [Tiếng Hindi](../hi/README.md) | [Tiếng Hungary](../hu/README.md) | [Tiếng Indonesia](../id/README.md) | [Tiếng Ý](../it/README.md) | [Tiếng Nhật](../ja/README.md) | [Tiếng Kannada](../kn/README.md) | [Tiếng Hàn](../ko/README.md) | [Tiếng Litva](../lt/README.md) | [Tiếng Mã Lai](../ms/README.md) | [Tiếng Malayalam](../ml/README.md) | [Tiếng Marathi](../mr/README.md) | [Tiếng Nepal](../ne/README.md) | [Tiếng Pidgin Nigeria](../pcm/README.md) | [Tiếng Na Uy](../no/README.md) | [Tiếng Ba Tư (Farsi)](../fa/README.md) | [Tiếng Ba Lan](../pl/README.md) | [Tiếng Bồ Đào Nha (Brazil)](../pt-BR/README.md) | [Tiếng Bồ Đào Nha (Bồ Đào Nha)](../pt-PT/README.md) | [Tiếng Punjabi (Gurmukhi)](../pa/README.md) | [Tiếng Romania](../ro/README.md) | [Tiếng Nga](../ru/README.md) | [Tiếng Serbia (Chữ Kirin)](../sr/README.md) | [Tiếng Slovakia](../sk/README.md) | [Tiếng Slovenia](../sl/README.md) | [Tiếng Tây Ban Nha](../es/README.md) | [Tiếng Swahili](../sw/README.md) | [Tiếng Thụy Điển](../sv/README.md) | [Tiếng Tagalog (Philippines)](../tl/README.md) | [Tiếng Tamil](../ta/README.md) | [Tiếng Telugu](../te/README.md) | [Tiếng Thái](../th/README.md) | [Tiếng Thổ Nhĩ Kỳ](../tr/README.md) | [Tiếng Ukraina](../uk/README.md) | [Tiếng Urdu](../ur/README.md) | [Tiếng Việt](./README.md)
+
+> **Ưu tiên Sao chép Cục bộ?**
+
+> Kho lưu trữ này bao gồm hơn 50 bản dịch ngôn ngữ, điều này làm tăng đáng kể kích thước tải xuống. Để sao chép mà không có bản dịch, hãy sử dụng kiểm tra rải rác:
+> ```bash
+> git clone --filter=blob:none --sparse https://github.com/microsoft/Web-Dev-For-Beginners.git
+> cd Web-Dev-For-Beginners
+> git sparse-checkout set --no-cone '/*' '!translations' '!translated_images'
+> ```
+> Điều này cung cấp cho bạn mọi thứ cần thiết để hoàn thành khóa học với tốc độ tải xuống nhanh hơn nhiều.
+<!-- CO-OP TRANSLATOR LANGUAGES TABLE END -->
+
+**Nếu bạn muốn có thêm ngôn ngữ dịch được hỗ trợ, danh sách được liệt kê [ở đây](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
+
+[![Mở trong Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Mở%20trong%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/microsoft/Web-Dev-For-Beginners)
+
+#### 🧑‍🎓 _Bạn là học sinh sinh viên?_
+
+Truy cập [**trang Trung Tâm Sinh Viên**](https://docs.microsoft.com/learn/student-hub/?WT.mc_id=academic-77807-sagibbon) nơi bạn sẽ tìm thấy các tài nguyên dành cho người mới bắt đầu, các gói Sinh viên và thậm chí cách nhận phiếu chứng nhận miễn phí. Đây là trang bạn nên đánh dấu và kiểm tra thường xuyên khi chúng tôi thay đổi nội dung hàng tháng.
+
+### 📣 Thông báo - Thử thách Chế độ Tác nhân GitHub Copilot mới để hoàn thành!
+
+Thử thách mới đã được thêm vào, tìm "Thử thách Chế độ Tác nhân GitHub Copilot 🚀" trong phần lớn các chương. Đó là thử thách mới dành cho bạn sử dụng GitHub Copilot và chế độ Tác nhân để hoàn thành. Nếu bạn chưa từng sử dụng chế độ Tác nhân trước đây, nó không chỉ tạo văn bản mà còn có thể tạo và chỉnh sửa tệp, chạy lệnh và nhiều hơn nữa.
+
+### 📣 Thông báo - _Dự án Mới xây dựng sử dụng AI Sinh tạo_
+
+Dự án Trợ lý AI mới vừa được thêm, xem dự án tại [project](./9-chat-project/README.md)
+
+### 📣 Thông báo - _Chương trình học Mới_ về AI Sinh tạo cho JavaScript vừa được phát hành
+
+Đừng bỏ lỡ chương trình học AI Sinh tạo mới của chúng tôi!
+
+Truy cập [https://aka.ms/genai-js-course](https://aka.ms/genai-js-course) để bắt đầu!
+
+![Nền](../../translated_images/vi/background.148a8d43afde5730.webp)
+
+- Bài học bao gồm mọi thứ từ cơ bản đến RAG.
+- Tương tác với các nhân vật lịch sử bằng GenAI và ứng dụng đồng hành của chúng tôi.
+- Câu chuyện vui nhộn và hấp dẫn, bạn sẽ du hành thời gian!
+
+![nhân vật](../../translated_images/vi/character.5c0dd8e067ffd693.webp)
+
+
+Mỗi bài học bao gồm một bài tập để hoàn thành, kiểm tra kiến thức và một thử thách để hướng dẫn bạn học các chủ đề như:
+- Kỹ thuật yêu cầu và xây dựng câu lệnh prompt
+- Tạo ứng dụng văn bản và hình ảnh
+- Ứng dụng tìm kiếm
+
+Truy cập [https://aka.ms/genai-js-course](../../[https:/aka.ms/genai-js-course) để bắt đầu!
+
+
+
+## 🌱 Bắt đầu
+
+> **Giáo viên**, chúng tôi đã [bao gồm một số đề xuất](for-teachers.md) về cách sử dụng chương trình học này. Chúng tôi rất mong nhận phản hồi của bạn [trong diễn đàn thảo luận của chúng tôi](https://github.com/microsoft/Web-Dev-For-Beginners/discussions/categories/teacher-corner)!
+
+**[Người học](https://aka.ms/student-page/?WT.mc_id=academic-77807-sagibbon)**, đối với mỗi bài học, hãy bắt đầu với bài kiểm tra trước bài giảng và tiếp tục đọc tài liệu bài giảng, hoàn thành các hoạt động khác nhau và kiểm tra hiểu biết của bạn qua bài kiểm tra sau bài giảng.
+
+Để nâng cao trải nghiệm học tập, hãy kết nối với đồng nghiệp để làm việc cùng nhau trên các dự án! Khuyến khích thảo luận trong [diễn đàn thảo luận](https://github.com/microsoft/Web-Dev-For-Beginners/discussions) của chúng tôi, nơi đội ngũ điều hành sẽ sẵn sàng trả lời các câu hỏi của bạn.
+
+Để học sâu hơn, chúng tôi rất khuyên bạn khám phá [Microsoft Learn](https://learn.microsoft.com/users/wirelesslife/collections/p1ddcy5jwy0jkm?WT.mc_id=academic-77807-sagibbon) để có thêm tài liệu học tập.
+
+### 📋 Cài đặt môi trường của bạn
+
+Chương trình học này có môi trường phát triển sẵn sàng! Khi bạn bắt đầu, bạn có thể chọn chạy chương trình học trong một [Codespace](https://github.com/features/codespaces/) (_môi trường trên trình duyệt, không cần cài đặt_), hoặc chạy cục bộ trên máy tính với trình soạn thảo văn bản như [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon).
+
+#### Tạo kho lưu trữ của bạn
+Để dễ dàng lưu tác phẩm của bạn, bạn nên tạo một bản sao riêng của kho lưu trữ này. Bạn có thể làm điều này bằng cách nhấn nút **Use this template** ở đầu trang. Điều này sẽ tạo một kho lưu trữ mới trong tài khoản GitHub của bạn với bản sao chương trình học.
+
+Thực hiện các bước sau:
+1. **Tạo Nhánh Repository**: Nhấp nút "Fork" ở góc trên bên phải của trang này.
+2. **Sao chép Repository**:   `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
+
+#### Chạy chương trình học trong Codespace
+
+Trong bản sao kho lưu trữ mà bạn đã tạo, nhấp nút **Code** và chọn **Open with Codespaces**. Điều này sẽ tạo một Codespace mới để bạn làm việc.
+
+![Codespace](../../translated_images/vi/createcodespace.0238bbf4d7a8d955.webp)
+
+#### Chạy chương trình học trên máy tính cục bộ
+
+Để chạy chương trình học này trên máy tính, bạn cần một trình soạn thảo văn bản, trình duyệt và công cụ dòng lệnh. Bài học đầu tiên của chúng tôi, [Giới thiệu về Ngôn ngữ Lập trình và Công cụ Thương mại](../../1-getting-started-lessons/1-intro-to-programming-languages), sẽ hướng dẫn bạn qua các tùy chọn cho từng công cụ này để bạn chọn cái phù hợp nhất với mình.
+
+Chúng tôi khuyên bạn sử dụng [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) làm trình soạn thảo, trình soạn này cũng có [Terminal](https://code.visualstudio.com/docs/terminal/basics/?WT.mc_id=academic-77807-sagibbon) tích hợp sẵn. Bạn có thể tải Visual Studio Code [tại đây](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon).
+
+
+1. Sao chép kho lưu trữ về máy tính của bạn. Bạn có thể làm điều này bằng cách nhấp nút **Code** và sao chép URL:
+
+    [CodeSpace](./images/createcodespace.png)
+Sau đó, mở [Terminal](https://code.visualstudio.com/docs/terminal/basics/?WT.mc_id=academic-77807-sagibbon) trong [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) và chạy lệnh sau, thay thế `<your-repository-url>` bằng URL bạn vừa sao chép:
+
+    ```bash 
+    git clone <your-repository-url>
+    ```
+
+2. Mở thư mục trong Visual Studio Code. Bạn có thể làm điều này bằng cách nhấp vào **File** > **Open Folder** và chọn thư mục bạn vừa sao chép.
+
+
+>  Các tiện ích mở rộng được đề xuất cho Visual Studio Code:
+>
+> * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&WT.mc_id=academic-77807-sagibbon) - để xem trước các trang HTML trong Visual Studio Code
+> * [Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&WT.mc_id=academic-77807-sagibbon) - giúp bạn viết mã nhanh hơn
+
+## 📂 Mỗi bài học bao gồm:
+
+- sketchnote tùy chọn
+- video bổ sung tùy chọn
+- bài kiểm tra khởi động trước bài học
+- bài học bằng văn bản
+- đối với các bài học dựa trên dự án, hướng dẫn từng bước cách xây dựng dự án
+- kiểm tra kiến thức
+- một thử thách
+- tài liệu đọc bổ sung
+- bài kiểm tra sau bài học [post-lesson quiz](https://ff-quizzes.netlify.app/web/)
+
+> **Ghi chú về bài kiểm tra**: Tất cả bài kiểm tra đều nằm trong thư mục Quiz-app, tổng cộng 48 bài kiểm tra, mỗi bài gồm ba câu hỏi. Chúng có sẵn [tại đây](https://ff-quizzes.netlify.app/web/), ứng dụng bài kiểm tra có thể chạy cục bộ hoặc được triển khai lên Azure; làm theo hướng dẫn trong thư mục `quiz-app`.
+
+## 🗃️ Các bài học
+
+|     |                       Tên Dự Án                       |                            Khái Niệm Được Dạy                             | Mục Tiêu Học Tập                                                                                                                 |                                                         Bài Học Liên Kết                                                          |         Tác Giả          |
+| :-: | :------------------------------------------------------: | :--------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------: | :---------------------: |
+| 01  |                     Bắt Đầu                      |           Giới thiệu Lập trình và Công cụ Nghề nghiệp           | Học các kiến thức cơ bản đằng sau hầu hết các ngôn ngữ lập trình và về phần mềm giúp các nhà phát triển chuyên nghiệp làm việc | [Intro to Programming Languages and Tools of the Trade](./1-getting-started-lessons/1-intro-to-programming-languages/README.md) |         Jasmine         |
+| 02  |                     Bắt Đầu                      |             Cơ bản về GitHub, bao gồm làm việc nhóm             | Cách sử dụng GitHub trong dự án của bạn, cách cộng tác với người khác trên mã nguồn                                                    |                            [Intro to GitHub](./1-getting-started-lessons/2-github-basics/README.md)                             |          Floor          |
+| 03  |                     Bắt Đầu                      |                             Khả năng tiếp cận                              | Học các kiến thức cơ bản về khả năng tiếp cận web                                                                                               |                       [Accessibility Fundamentals](./1-getting-started-lessons/3-accessibility/README.md)                       |       Christopher       |
+| 04  |                        JS Cơ Bản                         |                         Các loại dữ liệu trong JavaScript                          | Các kiến thức cơ bản về loại dữ liệu trong JavaScript                                                                                                 |                                       [Data Types](./2-js-basics/1-data-types/README.md)                                        |         Jasmine         |
+| 05  |                        JS Cơ Bản                         |                         Hàm và Phương thức                          | Học về các hàm và phương thức để quản lý luồng logic của ứng dụng                                                             |                              [Functions and Methods](./2-js-basics/2-functions-methods/README.md)                               | Jasmine and Christopher |
+| 06  |                        JS Cơ Bản                         |                        Quyết định với JS                        | Học cách tạo điều kiện trong mã của bạn sử dụng các phương pháp ra quyết định                                                           |                                 [Making Decisions](./2-js-basics/3-making-decisions/README.md)                                  |         Jasmine         |
+| 07  |                        JS Cơ Bản                         |                            Mảng và Vòng lặp                            | Làm việc với dữ liệu sử dụng mảng và vòng lặp trong JavaScript                                                                                 |                                   [Arrays and Loops](./2-js-basics/4-arrays-loops/README.md)                                    |         Jasmine         |
+| 08  |       [Terrarium](./3-terrarium/solution/README.md)       |                            Thực hành HTML                            | Xây dựng HTML để tạo một terrarium trực tuyến, tập trung vào xây dựng bố cục                                                         |                                 [Introduction to HTML](./3-terrarium/1-intro-to-html/README.md)                                 |           Jen           |
+| 09  |       [Terrarium](./3-terrarium/solution/README.md)       |                            Thực hành CSS                             | Xây dựng CSS để tạo kiểu cho terrarium trực tuyến, tập trung vào các kiến thức cơ bản về CSS bao gồm làm trang web phản hồi                     |                                  [Introduction to CSS](./3-terrarium/2-intro-to-css/README.md)                                  |           Jen           |
+| 10  |            [Terrarium](./3-terrarium/solution/README.md)            |                 Đóng gói JavaScript, thao tác DOM                  | Xây dựng JavaScript để terrarium hoạt động như một giao diện kéo thả, tập trung vào đóng gói và thao tác DOM             |                  [JavaScript Closures, DOM manipulation](./3-terrarium/3-intro-to-DOM-and-closures/README.md)                   |           Jen           |
+| 11  |          [Typing Game](./4-typing-game/solution/README.md)          |                          Xây dựng một Trò chơi Gõ phím                           | Học cách sử dụng sự kiện bàn phím để điều khiển logic của ứng dụng JavaScript                                                          |                                [Event-Driven Programming](./4-typing-game/typing-game/README.md)                                |       Christopher       |
+| 12  | [Green Browser Extension](./5-browser-extension/solution/README.md) |                         Làm việc với Trình duyệt                          | Học cách trình duyệt hoạt động, lịch sử của chúng và cách tạo khung cho các phần tử đầu tiên của tiện ích mở rộng trình duyệt                               |                               [About Browsers](./5-browser-extension/1-about-browsers/README.md)                                |           Jen           |
+| 13  | [Green Browser Extension](./5-browser-extension/solution/README.md) | Xây dựng biểu mẫu, gọi API và lưu trữ biến trong bộ nhớ cục bộ | Xây dựng các phần tử JavaScript của tiện ích mở rộng trình duyệt để gọi API sử dụng biến lưu trong bộ nhớ cục bộ                      |                [APIs, Forms, and Local Storage](./5-browser-extension/2-forms-browsers-local-storage/README.md)                 |           Jen           |
+| 14  | [Green Browser Extension](./5-browser-extension/solution/README.md) |          Các quy trình nền trong trình duyệt, hiệu suất web          | Sử dụng các quy trình nền của trình duyệt để quản lý biểu tượng tiện ích; tìm hiểu về hiệu suất web và một số tối ưu hóa để nâng cao   |             [Background Tasks and Performance](./5-browser-extension/3-background-tasks-and-performance/README.md)              |           Jen           |
+| 15  |           [Space Game](./6-space-game/solution/README.md)           |             Phát triển Game nâng cao hơn với JavaScript             | Học về kế thừa sử dụng cả Lớp và Tổng hợp và mẫu Pub/Sub, chuẩn bị cho việc xây dựng game              |                      [Introduction to Advanced Game Development](./6-space-game/1-introduction/README.md)                       |          Chris          |
+| 16  |           [Space Game](./6-space-game/solution/README.md)           |                           Vẽ trên canvas                            | Học về Canvas API, dùng để vẽ các phần tử lên màn hình                                                                       |                                [Drawing to Canvas](./6-space-game/2-drawing-to-canvas/README.md)                                |          Chris          |
+| 17  |           [Space Game](./6-space-game/solution/README.md)           |                   Di chuyển các phần tử quanh màn hình                    | Khám phá cách các phần tử có thể chuyển động sử dụng tọa độ Đề-các và Canvas API                                            |                           [Moving Elements Around](./6-space-game/3-moving-elements-around/README.md)                           |          Chris          |
+| 18  |           [Space Game](./6-space-game/solution/README.md)           |                          Phát hiện va chạm                           | Làm cho các phần tử va chạm và phản ứng với nhau sử dụng phím bấm và cung cấp chức năng hạ nhiệt để đảm bảo hiệu suất trò chơi    |                              [Collision Detection](./6-space-game/4-collision-detection/README.md)                              |          Chris          |
+| 19  |           [Space Game](./6-space-game/solution/README.md)           |                             Tính điểm                              | Thực hiện các phép tính toán dựa trên trạng thái và hiệu suất của trò chơi                                                                |                                    [Keeping Score](./6-space-game/5-keeping-score/README.md)                                    |          Chris          |
+| 20  |           [Space Game](./6-space-game/solution/README.md)           |                     Kết thúc và khởi động lại trò chơi                     | Học về kết thúc và khởi động lại trò chơi, bao gồm dọn dẹp tài sản và đặt lại biến                              |                                [The Ending Condition](./6-space-game/6-end-condition/README.md)                                 |          Chris          |
+| 21  |         [Banking App](./7-bank-project/solution/README.md)          |                 Mẫu HTML và Định tuyến trong ứng dụng Web                 | Học cách tạo khung kiến trúc của một trang web đa trang sử dụng định tuyến và mẫu HTML                             |                            [HTML Templates and Routes](./7-bank-project/1-template-route/README.md)                             |          Yohan          |
+| 22  |         [Banking App](./7-bank-project/solution/README.md)          |                  Xây dựng biểu mẫu Đăng nhập và Đăng ký                   | Học về xây dựng biểu mẫu và xử lý các quy trình xác thực                                                                          |                                           [Forms](./7-bank-project/2-forms/README.md)                                           |          Yohan          |
+| 23  |         [Banking App](./7-bank-project/solution/README.md)          |                   Phương pháp lấy và sử dụng dữ liệu                   | Cách dữ liệu đi vào và ra khỏi ứng dụng của bạn, cách lấy nó, lưu trữ và loại bỏ                                                 |                                            [Data](./7-bank-project/3-data/README.md)                                            |          Yohan          |
+| 24  |         [Banking App](./7-bank-project/solution/README.md)          |                      Khái niệm Quản lý Trạng thái                      | Học cách ứng dụng giữ trạng thái và quản lý nó một cách lập trình                                                              |                                [State Management](./7-bank-project/4-state-management/README.md)                                |          Yohan          |
+| 25 | [Browser/VScode Code](../../8-code-editor) | Làm việc với VScode | Học cách sử dụng trình soạn thảo mã | [Use VScode Code Editor](./8-code-editor/1-using-a-code-editor/README.md) | Chris |
+| 26 | [AI Assistants](./9-chat-project/README.md) | Làm việc với AI | Học cách xây dựng trợ lý AI của riêng bạn | [AI Assistant project](./9-chat-project/README.md) | Chris |
+
+## 🏫 Phương pháp giảng dạy
+
+Chương trình giảng dạy của chúng tôi được thiết kế với hai nguyên tắc sư phạm chính:
+* học dựa trên dự án
+* các bài kiểm tra thường xuyên
+
+Chương trình dạy các kiến thức cơ bản về JavaScript, HTML và CSS, cũng như các công cụ và kỹ thuật mới nhất được các nhà phát triển web hiện nay sử dụng. Học viên sẽ có cơ hội phát triển kinh nghiệm thực tế bằng cách xây dựng một trò chơi gõ phím, terrarium ảo, tiện ích mở rộng trình duyệt thân thiện với môi trường, trò chơi kiểu không gian xâm lược, và ứng dụng ngân hàng cho doanh nghiệp. Cuối chuỗi bài học, học viên sẽ có được hiểu biết vững chắc về phát triển web.
+
+> 🎓 Bạn có thể học những bài đầu tiên trong chương trình này như một [Đường Học](https://docs.microsoft.com/learn/paths/web-development-101/?WT.mc_id=academic-77807-sagibbon) trên Microsoft Learn!
+
+Bằng cách đảm bảo nội dung phù hợp với các dự án, quá trình học trở nên hấp dẫn hơn cho học viên và việc ghi nhớ kiến thức sẽ được tăng cường. Chúng tôi cũng đã viết một số bài học khởi đầu về cơ bản JavaScript để giới thiệu các khái niệm, kết hợp với video từ bộ sưu tập tài liệu video "[Beginners Series to: JavaScript](https://channel9.msdn.com/Series/Beginners-Series-to-JavaScript/?WT.mc_id=academic-77807-sagibbon)", một số tác giả của nó cũng góp phần vào chương trình giảng dạy này.
+
+Ngoài ra, một bài kiểm tra với mức độ áp lực thấp trước lớp nhằm đặt mục tiêu cho học viên hướng tới việc học một chủ đề, trong khi bài kiểm tra thứ hai sau lớp đảm bảo việc lưu giữ kiến thức. Chương trình này được thiết kế linh hoạt và vui nhộn, có thể học toàn bộ hoặc từng phần. Các dự án bắt đầu nhỏ và ngày càng phức tạp hơn vào cuối chu kỳ 12 tuần.
+
+Trong khi chúng tôi cố ý tránh giới thiệu các framework JavaScript để tập trung vào kỹ năng cơ bản cần có của nhà phát triển web trước khi áp dụng một framework, bước tiếp theo tốt để hoàn thành chương trình giảng dạy này là học về Node.js qua một bộ video khác: "[Beginner Series to: Node.js](https://channel9.msdn.com/Series/Beginners-Series-to-Nodejs/?WT.mc_id=academic-77807-sagibbon)".
+
+> Tham khảo [Quy tắc Ứng xử](CODE_OF_CONDUCT.md) và hướng dẫn [Đóng góp](CONTRIBUTING.md) của chúng tôi. Chúng tôi hoan nghênh các phản hồi xây dựng của bạn!
+
+
+## 🧭 Truy cập Offline
+
+Bạn có thể chạy tài liệu này offline bằng cách sử dụng [Docsify](https://docsify.js.org/#/). Tạo một bản fork repo này, [cài đặt Docsify](https://docsify.js.org/#/quickstart) trên máy tính của bạn, sau đó trong thư mục gốc của repo này, gõ `docsify serve`. Trang web sẽ được phục vụ tại cổng 3000 trên localhost của bạn: `localhost:3000`.
+
+## 📘 PDF
+
+Một bản PDF của tất cả các bài học có thể được tìm thấy [tại đây](https://microsoft.github.io/Web-Dev-For-Beginners/pdf/readme.pdf).
+
+
+## 🎒 Các Khóa Học Khác
+Nhóm của chúng tôi sản xuất các khóa học khác! Hãy xem:
+
+<!-- CO-OP TRANSLATOR OTHER COURSES START -->
+### LangChain
+[![LangChain4j for Beginners](https://img.shields.io/badge/LangChain4j%20for%20Beginners-22C55E?style=for-the-badge&&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchain4j-for-beginners)
+[![LangChain.js for Beginners](https://img.shields.io/badge/LangChain.js%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchainjs-for-beginners?WT.mc_id=m365-94501-dwahlin)
+
+---
+
+### Azure / Edge / MCP / Agents
+[![AZD for Beginners](https://img.shields.io/badge/AZD%20for%20Beginners-0078D4?style=for-the-badge&labelColor=E5E7EB&color=0078D4)](https://github.com/microsoft/AZD-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![Edge AI for Beginners](https://img.shields.io/badge/Edge%20AI%20for%20Beginners-00B8E4?style=for-the-badge&labelColor=E5E7EB&color=00B8E4)](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![MCP for Beginners](https://img.shields.io/badge/MCP%20for%20Beginners-009688?style=for-the-badge&labelColor=E5E7EB&color=009688)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![AI Agents for Beginners](https://img.shields.io/badge/AI%20Agents%20for%20Beginners-00C49A?style=for-the-badge&labelColor=E5E7EB&color=00C49A)](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### Chuỗi AI Tạo Sinh
+[![Generative AI for Beginners](https://img.shields.io/badge/Generative%20AI%20for%20Beginners-8B5CF6?style=for-the-badge&labelColor=E5E7EB&color=8B5CF6)](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (.NET)](https://img.shields.io/badge/Generative%20AI%20(.NET)-9333EA?style=for-the-badge&labelColor=E5E7EB&color=9333EA)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (Java)](https://img.shields.io/badge/Generative%20AI%20(Java)-C084FC?style=for-the-badge&labelColor=E5E7EB&color=C084FC)](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (JavaScript)](https://img.shields.io/badge/Generative%20AI%20(JavaScript)-E879F9?style=for-the-badge&labelColor=E5E7EB&color=E879F9)](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### Học Tập Cốt Lõi
+[![ML for Beginners](https://img.shields.io/badge/ML%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=22C55E)](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+[![Data Science for Beginners](https://img.shields.io/badge/Data%20Science%20for%20Beginners-84CC16?style=for-the-badge&labelColor=E5E7EB&color=84CC16)](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+[![AI for Beginners](https://img.shields.io/badge/AI%20for%20Beginners-A3E635?style=for-the-badge&labelColor=E5E7EB&color=A3E635)](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+[![Cybersecurity for Beginners](https://img.shields.io/badge/Cybersecurity%20for%20Beginners-F97316?style=for-the-badge&labelColor=E5E7EB&color=F97316)](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
+[![Web Dev for Beginners](https://img.shields.io/badge/Web%20Dev%20for%20Beginners-EC4899?style=for-the-badge&labelColor=E5E7EB&color=EC4899)](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+[![IoT for Beginners](https://img.shields.io/badge/IoT%20for%20Beginners-14B8A6?style=for-the-badge&labelColor=E5E7EB&color=14B8A6)](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+[![XR Development for Beginners](https://img.shields.io/badge/XR%20Development%20for%20Beginners-38BDF8?style=for-the-badge&labelColor=E5E7EB&color=38BDF8)](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### Chuỗi Copilot
+[![Copilot for AI Paired Programming](https://img.shields.io/badge/Copilot%20for%20AI%20Paired%20Programming-FACC15?style=for-the-badge&labelColor=E5E7EB&color=FACC15)](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+[![Copilot for C#/.NET](https://img.shields.io/badge/Copilot%20for%20C%23/.NET-FBBF24?style=for-the-badge&labelColor=E5E7EB&color=FBBF24)](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+[![Copilot Adventure](https://img.shields.io/badge/Copilot%20Adventure-FDE68A?style=for-the-badge&labelColor=E5E7EB&color=FDE68A)](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+<!-- CO-OP TRANSLATOR OTHER COURSES END -->
+
+## Nhận Trợ Giúp
+
+Nếu bạn gặp khó khăn hoặc có bất kỳ câu hỏi nào về việc xây dựng các ứng dụng AI. Hãy tham gia cùng các học viên khác và các nhà phát triển có kinh nghiệm trong các cuộc thảo luận về MCP. Đây là một cộng đồng hỗ trợ nơi các câu hỏi được chào đón và kiến thức được chia sẻ tự do.
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+Nếu bạn có phản hồi về sản phẩm hoặc lỗi trong khi xây dựng, hãy truy cập:
+
+[![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
+
+## Giấy Phép
+
+Kho lưu trữ này được cấp phép theo giấy phép MIT. Xem tệp [LICENSE](../../LICENSE) để biết thêm thông tin.
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Tuyên bố miễn trừ trách nhiệm**:  
+Tài liệu này đã được dịch bằng dịch vụ dịch thuật AI [Co-op Translator](https://github.com/Azure/co-op-translator). Mặc dù chúng tôi nỗ lực đảm bảo tính chính xác, xin lưu ý rằng bản dịch tự động có thể chứa lỗi hoặc không chính xác. Tài liệu gốc bằng ngôn ngữ bản địa nên được coi là nguồn tham khảo chính thức. Đối với thông tin quan trọng, khuyến nghị sử dụng dịch vụ dịch thuật chuyên nghiệp của con người. Chúng tôi không chịu trách nhiệm đối với bất kỳ sự hiểu lầm hay giải thích sai nào phát sinh từ việc sử dụng bản dịch này.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->
