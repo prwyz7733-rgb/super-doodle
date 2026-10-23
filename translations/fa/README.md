@@ -1,0 +1,268 @@
+[![GitHub license](https://img.shields.io/github/license/microsoft/Web-Dev-For-Beginners.svg)](https://github.com/microsoft/Web-Dev-For-Beginners/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/Web-Dev-For-Beginners.svg)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/pulls/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/network/)
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/Web-Dev-For-Beginners.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/stargazers/)
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+# توسعه وب برای مبتدی‌ها - یک دوره آموزشی
+
+اصول بنیادی توسعه وب را با دوره جامع ۱۲ هفته‌ای ما توسط مدافعان مایکروسافت کلود بیاموزید. هر یک از ۲۴ درس به صورت عملی به جاوااسکریپت، CSS و HTML می‌پردازد با پروژه‌هایی مانند تراریوم‌ها، افزونه‌های مرورگر و بازی‌های فضایی. در کوییزها، گفتگوها و تمرین‌های عملی شرکت کنید. مهارت‌های خود را ارتقا دهید و با روش آموزش مبتنی بر پروژه ما، دانش خود را بهینه کنید. سفر کدنویسی خود را امروز آغاز کنید!
+
+به انجمن دیسکورد Azure AI Foundry ملحق شوید
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+برای شروع استفاده از این منابع، مراحل زیر را دنبال کنید:
+1. **انشعاب (فورک) مخزن**: روی [![GitHub forks](https://img.shields.io/github/forks/microsoft/Web-Dev-For-beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/Web-Dev-For-Beginners/fork) کلیک کنید
+2. **کلون کردن مخزن**: `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
+3. [**به دیسکورد Azure AI Foundry بپیوندید و با کارشناسان و توسعه‌دهندگان هم‌تراز ملاقات کنید**](https://discord.com/invite/ByRwuEEgH4)
+
+### 🌐 پشتیبانی چندزبان
+
+#### پشتیبانی توسط GitHub Action (خودکار و همیشه به‌روز)
+
+<!-- CO-OP TRANSLATOR LANGUAGES TABLE START -->
+[عربی](../ar/README.md) | [بنگالی](../bn/README.md) | [بلغاری](../bg/README.md) | [برمه‌ای (میانمار)](../my/README.md) | [چینی (ساده‌شده)](../zh-CN/README.md) | [چینی (سنتی، هنگ‌کنگ)](../zh-HK/README.md) | [چینی (سنتی، ماکائو)](../zh-MO/README.md) | [چینی (سنتی، تایوان)](../zh-TW/README.md) | [کرواتی](../hr/README.md) | [چک](../cs/README.md) | [دانمارکی](../da/README.md) | [هلندی](../nl/README.md) | [استونیایی](../et/README.md) | [فنلاندی](../fi/README.md) | [فرانسوی](../fr/README.md) | [آلمانی](../de/README.md) | [یونانی](../el/README.md) | [عبری](../he/README.md) | [هندی](../hi/README.md) | [مجارستانی](../hu/README.md) | [اندونزیایی](../id/README.md) | [ایتالیایی](../it/README.md) | [ژاپنی](../ja/README.md) | [کانارا](../kn/README.md) | [کره‌ای](../ko/README.md) | [لیتوانیایی](../lt/README.md) | [مالایی](../ms/README.md) | [مالایالام](../ml/README.md) | [مراتی](../mr/README.md) | [نپالی](../ne/README.md) | [پیدجین نیجریه‌ای](../pcm/README.md) | [نروژی](../no/README.md) | [فارسی](./README.md) | [لهستانی](../pl/README.md) | [پرتغالی (برزیل)](../pt-BR/README.md) | [پرتغالی (پرتغال)](../pt-PT/README.md) | [پنجابی (گورموخی)](../pa/README.md) | [رومانیایی](../ro/README.md) | [روسی](../ru/README.md) | [صربی (سیریلیک)](../sr/README.md) | [اسلواکی](../sk/README.md) | [اسلوونیایی](../sl/README.md) | [اسپانیایی](../es/README.md) | [سواحیلی](../sw/README.md) | [سوئدی](../sv/README.md) | [تاگالوگ (فیلیپینی)](../tl/README.md) | [تامیل](../ta/README.md) | [تلوگو](../te/README.md) | [تایلندی](../th/README.md) | [ترکی](../tr/README.md) | [اوکراینی](../uk/README.md) | [اردو](../ur/README.md) | [ویتنامی](../vi/README.md)
+
+> **مایلید به کلون کردن محلی هستید؟**
+
+> این مخزن شامل بیش از ۵۰ ترجمه زبان است که اندازه دانلود را به طور قابل توجهی افزایش می‌دهد. برای کلون بدون ترجمه‌ها، از sparse checkout استفاده کنید:
+> ```bash
+> git clone --filter=blob:none --sparse https://github.com/microsoft/Web-Dev-For-Beginners.git
+> cd Web-Dev-For-Beginners
+> git sparse-checkout set --no-cone '/*' '!translations' '!translated_images'
+> ```
+> این به شما همه چیز لازم برای تکمیل دوره را با دانلود بسیار سریع‌تر می‌دهد.
+<!-- CO-OP TRANSLATOR LANGUAGES TABLE END -->
+
+**اگر تمایل به پشتیبانی ترجمه زبان‌های بیشتر دارید، زبان‌های پشتیبانی شده در [اینجا](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) آمده است**
+
+[![باز کردن در Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/microsoft/Web-Dev-For-Beginners)
+
+#### 🧑‍🎓 _آیا دانشجو هستید؟_
+
+از صفحه [**Student Hub**](https://docs.microsoft.com/learn/student-hub/?WT.mc_id=academic-77807-sagibbon) دیدن کنید که منابع مبتدی، پکیج‌های دانشجویی و حتی راه‌هایی برای دریافت کوپن رایگان گواهینامه را خواهید یافت. این صفحه‌ای است که باید نشانک کنید و گاه به گاه بررسی کنید چون محتوای آن ماهانه به‌روزرسانی می‌شود.
+
+### 📣 اطلاعیه - چالش‌های حالت GitHub Copilot Agent جدید برای تکمیل!
+
+چالش جدید اضافه شده، به دنبال "GitHub Copilot Agent Challenge 🚀" در اکثر فصل‌ها باشید. این چالش جدیدی است برای شما که با استفاده از GitHub Copilot و حالت Agent کامل کنید. اگر پیش‌تر حالت Agent را استفاده نکرده‌اید، این حالت قادر است نه فقط متن تولید کند بلکه فایل‌ها را بسازد و ویرایش کند، فرمان‌ها را اجرا کند و بیشتر.
+
+### 📣 اطلاعیه - _پروژه جدیدی برای ساخت با هوش مصنوعی مولد_
+
+پروژه دستیار هوش مصنوعی جدید همین‌تازگی اضافه شده، آن را بررسی کنید [project](./9-chat-project/README.md)
+
+### 📣 اطلاعیه - _دوره جدید_ درباره هوش مصنوعی مولد برای جاوااسکریپت همین‌تازگی منتشر شده
+
+دوره جدید هوش مصنوعی مولد ما را از دست ندهید!
+
+برای شروع به [https://aka.ms/genai-js-course](https://aka.ms/genai-js-course) مراجعه کنید!
+
+![پس‌زمینه](../../translated_images/fa/background.148a8d43afde5730.webp)
+
+- درس‌ها شامل همه چیز از مقدمات تا RAG.
+- تعامل با شخصیت‌های تاریخی با استفاده از GenAI و اپ همراه ما.
+- روایت جذاب و سرگرم‌کننده، شما را به سفر در زمان می‌برد!
+
+![شخصیت](../../translated_images/fa/character.5c0dd8e067ffd693.webp)
+
+
+هر درس شامل یک تمرین برای تکمیل، یک آزمون دانش و یک چالش برای راهنمایی شما در یادگیری موضوعاتی مانند:
+- پرامپت‌نویسی و مهندسی پرامپت
+- تولید اپلیکیشن‌های متنی و تصویری
+- اپ‌های جستجو
+
+برای شروع به [https://aka.ms/genai-js-course](https://aka.ms/genai-js-course) مراجعه کنید!
+
+
+
+## 🌱 شروع به کار
+
+> **معلمان**، ما [برخی پیشنهادات](for-teachers.md) درباره نحوه استفاده از این دوره را درج کرده‌ایم. خوشحال می‌شویم بازخورد شما را [در انجمن بحث ما](https://github.com/microsoft/Web-Dev-For-Beginners/discussions/categories/teacher-corner) دریافت کنیم!
+
+**[یادگیرندگان](https://aka.ms/student-page/?WT.mc_id=academic-77807-sagibbon)**، برای هر درس، با یک کوییز پیش‌سخنرانی شروع کنید و سپس با خواندن متون درس، تکمیل فعالیت‌های مختلف و ارزیابی درک خود با کوییز پساسخنرانی ادامه دهید.
+
+برای بهبود تجربه یادگیری خود، با همکلاسی‌هایتان ارتباط برقرار کنید و پروژه‌ها را با هم انجام دهید! بحث و گفتگو در [انجمن بحث ما](https://github.com/microsoft/Web-Dev-For-Beginners/discussions) تشویق می‌شود و تیم ناظران ما برای پاسخگویی به سوالات شما در دسترس خواهند بود.
+
+برای ارتقای آموزش خود، شدیداً پیشنهاد می‌کنیم که [Microsoft Learn](https://learn.microsoft.com/users/wirelesslife/collections/p1ddcy5jwy0jkm?WT.mc_id=academic-77807-sagibbon) را برای منابع مطالعه اضافی بررسی کنید.
+
+### 📋 راه‌اندازی محیط کاری شما
+
+این دوره دارای محیط توسعه آماده است! هنگام شروع، می‌توانید انتخاب کنید که دوره را در [Codespace](https://github.com/features/codespaces/) (_یک محیط مبتنی بر مرورگر بدون نیاز به نصب_) یا محلی روی کامپیوتر خود با یک ویرایشگر متن مانند [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) اجرا کنید.
+
+#### ایجاد مخزن خود
+برای اینکه بتوانید به‌راحتی کارهای خود را ذخیره کنید، توصیه می‌شود یک کپی از این مخزن ایجاد کنید. برای این کار روی دکمه **Use this template** در بالای صفحه کلیک کنید. این کار یک مخزن جدید در حساب GitHub شما با کپی دوره ایجاد می‌کند.
+
+مراحل زیر را دنبال کنید:
+1. **انشعاب مخزن**: روی دکمه "Fork" در گوشه بالا سمت راست این صفحه کلیک کنید.
+2. **کلون کردن مخزن**:  `git clone https://github.com/microsoft/Web-Dev-For-Beginners.git`
+
+#### اجرای دوره در Codespace
+
+در نسخه خود از این مخزن که ایجاد کرده‌اید، روی دکمه **Code** کلیک کرده و گزینه **Open with Codespaces** را انتخاب کنید. این کار یک Codespace جدید برای کار شما ایجاد می‌کند.
+
+![Codespace](../../translated_images/fa/createcodespace.0238bbf4d7a8d955.webp)
+
+#### اجرای دوره به صورت محلی روی کامپیوتر شما
+
+برای اجرای این دوره به‌صورت محلی نیاز به یک ویرایشگر متن، یک مرورگر و یک ابزار خط فرمان دارید. اولین درس ما، [معرفی زبان‌های برنامه‌نویسی و ابزارهای کار](../../1-getting-started-lessons/1-intro-to-programming-languages)، گزینه‌های مختلف هر یک از این ابزارها را به شما معرفی می‌کند تا بهترین گزینه را برای خود انتخاب کنید.
+
+توصیه ما استفاده از [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) به عنوان ویرایشگر است که همچنین دارای یک [ترمینال داخلی](https://code.visualstudio.com/docs/terminal/basics/?WT.mc_id=academic-77807-sagibbon) است. می‌توانید Visual Studio Code را از [اینجا](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) دانلود کنید.
+
+
+1. مخزن خود را به کامپیوترتان کلون کنید. برای این کار روی دکمه **Code** کلیک کرده و URL را کپی کنید:
+
+    [CodeSpace](./images/createcodespace.png)
+سپس، یک [ترمینال](https://code.visualstudio.com/docs/terminal/basics/?WT.mc_id=academic-77807-sagibbon) در داخل [ویژوال استودیو کد](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon) باز کنید و دستور زیر را اجرا کنید، به‌جای `<your-repository-url>`، آدرسی را که کپی کرده‌اید جایگزین کنید:
+
+    ```bash 
+    git clone <your-repository-url>
+    ```
+
+۲. پوشه را در ویژوال استودیو کد باز کنید. این کار را با کلیک روی **File** > **Open Folder** و انتخاب پوشه‌ای که تازه کلون کرده‌اید انجام دهید.
+
+> افزونه‌های پیشنهاد شده ویژوال استودیو کد:
+>
+> * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&WT.mc_id=academic-77807-sagibbon) - برای پیش‌نمایش صفحات HTML در داخل ویژوال استودیو کد
+> * [Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot&WT.mc_id=academic-77807-sagibbon) - برای کمک به نوشتن سریع‌تر کد
+
+## 📂 هر درس شامل:
+
+- نقشه‌کشی اختیاری
+- ویدیوی تکمیلی اختیاری
+- آزمون گرم‌کننده پیش‌درس
+- درس نوشتاری
+- برای درس‌های مبتنی بر پروژه، راهنماهای گام‌به‌گام نحوه ساخت پروژه
+- بررسی دانش
+- یک چالش
+- مطالعه تکمیلی
+- تمرین
+- [آزمون پس از درس](https://ff-quizzes.netlify.app/web/)
+
+> **تذکر درباره آزمون‌ها**: تمام آزمون‌ها در پوشه Quiz-app قرار دارند، مجموعاً ۴۸ آزمون با هر کدام شامل سه سوال. آن‌ها [اینجا](https://ff-quizzes.netlify.app/web/) در دسترس‌اند، اپلیکیشن آزمون می‌تواند به صورت محلی اجرا شود یا روی Azure منتشر گردد؛ دستورالعمل اجرای آن در پوشه `quiz-app` موجود است.
+
+## 🗃️ دروس
+
+|     |                       نام پروژه                       |                            مفاهیم آموزش داده شده                             | اهداف آموزشی                                                                                                                 |                                                         درس مرتبط                                                          |         نویسنده          |
+| :-: | :------------------------------------------------------: | :--------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------: | :---------------------: |
+| ۰۱  |                     شروع کار                      |           مقدمه‌ای بر برنامه‌نویسی و ابزارهای کار           | یادگیری اصول پایه در پشت بیشتر زبان‌های برنامه‌نویسی و همچنین نرم‌افزارهایی که به توسعه‌دهندگان حرفه‌ای برای انجام کارشان کمک می‌کنند | [مقدمه‌ای بر زبان‌های برنامه‌نویسی و ابزارهای کار](./1-getting-started-lessons/1-intro-to-programming-languages/README.md) |         جاسمن         |
+| ۰۲  |                     شروع کار                      |             مبانی گیت‌هاب، شامل همکاری تیمی             | چگونگی استفاده از گیت‌هاب در پروژه، و نحوه همکاری با دیگران روی کد                                                    |                            [مقدمه‌ای بر گیت‌هاب](./1-getting-started-lessons/2-github-basics/README.md)                             |          فلور          |
+| ۰۳  |                     شروع کار                      |                             دسترسی (Accessibility)                              | یادگیری اصول پایه درباره دسترسی وب                                                                                               |                       [مبانی دسترسی](./1-getting-started-lessons/3-accessibility/README.md)                       |       کریستوفر       |
+| ۰۴  |                        پایه‌های JS                         |                         انواع داده‌ها در جاوااسکریپت                          | مفاهیم پایه انواع داده‌ها در جاوااسکریپت                                                                                                 |                                       [انواع داده‌ها](./2-js-basics/1-data-types/README.md)                                        |         جاسمن         |
+| ۰۵  |                        پایه‌های JS                         |                         توابع و متدها                          | یادگیری توابع و متدها برای مدیریت جریان منطق برنامه                                                             |                              [توابع و متدها](./2-js-basics/2-functions-methods/README.md)                               | جاسمن و کریستوفر |
+| ۰۶  |                        پایه‌های JS                         |                        تصمیم‌گیری با جاوااسکریپت                        | نحوه ایجاد شرط‌ها در کد با استفاده از روش‌های تصمیم‌گیری                                                           |                                 [تصمیم‌گیری](./2-js-basics/3-making-decisions/README.md)                                  |         جاسمن         |
+| ۰۷  |                        پایه‌های JS                         |                            آرایه‌ها و حلقه‌ها                            | کار با داده‌ها با استفاده از آرایه‌ها و حلقه‌ها در جاوااسکریپت                                                                                 |                                   [آرایه‌ها و حلقه‌ها](./2-js-basics/4-arrays-loops/README.md)                                    |         جاسمن         |
+| ۰۸  |       [Terrarium](./3-terrarium/solution/README.md)       |                            HTML در عمل                            | ساخت HTML برای ایجاد یک تراریوم آنلاین، با تمرکز روی ساختار صفحه                                                         |                                 [مقدمه‌ای بر HTML](./3-terrarium/1-intro-to-html/README.md)                                 |           جن           |
+| ۰۹  |       [Terrarium](./3-terrarium/solution/README.md)       |                            CSS در عمل                             | ساخت CSS برای طراحی تراریوم آنلاین، تمرکز بر اصول CSS از جمله ریسپانسیو کردن صفحه                     |                                  [مقدمه‌ای بر CSS](./3-terrarium/2-intro-to-css/README.md)                                  |           جن           |
+| ۱۰  |            [Terrarium](./3-terrarium/solution/README.md)            |                 کلوژرهای جاوااسکریپت، دستکاری DOM                  | ساخت جاوااسکریپت برای عملکرد تراریوم به صورت واسط کشیدن و رها کردن، با تمرکز بر کلوژرها و دستکاری DOM             |                  [کلوژرهای جاوااسکریپت، دستکاری DOM](./3-terrarium/3-intro-to-DOM-and-closures/README.md)                   |           جن           |
+| ۱۱  |          [Typing Game](./4-typing-game/solution/README.md)          |                          ساخت بازی تایپینگ                           | یادگیری استفاده از رویدادهای صفحه‌کلید برای هدایت منطق اپلیکیشن جاوااسکریپت                                                          |                                [برنامه‌نویسی رویدادمحور](./4-typing-game/typing-game/README.md)                                |       کریستوفر       |
+| ۱۲  | [Green Browser Extension](./5-browser-extension/solution/README.md) |                         کار با مرورگرها                          | یادگیری نحوه کار مرورگرها، تاریخچه آن‌ها، و ساخت المان‌های اولیه افزونه مرورگر                               |                               [درباره مرورگرها](./5-browser-extension/1-about-browsers/README.md)                                |           جن           |
+| ۱۳  | [Green Browser Extension](./5-browser-extension/solution/README.md) | ساخت فرم، فراخوانی API و ذخیره متغیرها در فضای محلی | ساخت المان‌های جاوااسکریپت افزونه مرورگر برای فراخوانی API با استفاده از متغیرهای ذخیره‌شده در فضای محلی                      |                [APIها، فرم‌ها و فضای ذخیره محلی](./5-browser-extension/2-forms-browsers-local-storage/README.md)                 |           جن           |
+| ۱۴  | [Green Browser Extension](./5-browser-extension/solution/README.md) |          فرایندهای پس‌زمینه مرورگر، عملکرد وب          | استفاده از فرایندهای پس‌زمینه مرورگر برای مدیریت آیکون افزونه؛ یادگیری درباره عملکرد وب و بهینه‌سازی‌های مرتبط   |             [کارهای پس‌زمینه و عملکرد](./5-browser-extension/3-background-tasks-and-performance/README.md)              |           جن           |
+| ۱۵  |           [Space Game](./6-space-game/solution/README.md)           |             توسعه پیشرفته‌تر بازی با جاوااسکریپت             | یادگیری وراثت با استفاده از هر دو کلاس‌ها و ترکیب و الگوی Pub/Sub، آماده‌سازی برای ساخت بازی              |                      [مقدمه‌ای بر توسعه پیشرفته بازی](./6-space-game/1-introduction/README.md)                       |          کریس          |
+| ۱۶  |           [Space Game](./6-space-game/solution/README.md)           |                           نقاشی روی بوم                            | یادگیری API بوم (Canvas) برای ترسیم المان‌ها روی صفحه                                                                       |                                [نقاشی روی بوم](./6-space-game/2-drawing-to-canvas/README.md)                                |          کریس          |
+| ۱۷  |           [Space Game](./6-space-game/solution/README.md)           |                   حرکت دادن المان‌ها در اطراف صفحه                    | کشف نحوه حرکت المان‌ها با استفاده از مختصات کارتزین و API بوم                                            |                           [حرکت دادن المان‌ها](./6-space-game/3-moving-elements-around/README.md)                           |          کریس          |
+| ۱۸  |           [Space Game](./6-space-game/solution/README.md)           |                          تشخیص برخورد                           | ایجاد برخورد بین المان‌ها و واکنش به همدیگر با استفاده از کلیدها و ارائه تابع خنک‌کننده برای تضمین عملکرد بازی    |                              [تشخیص برخورد](./6-space-game/4-collision-detection/README.md)                              |          کریس          |
+| ۱۹  |           [Space Game](./6-space-game/solution/README.md)           |                             ثبت امتیاز                              | انجام محاسبات ریاضی بر اساس وضعیت و عملکرد بازی                                                                |                                    [ثبت امتیاز](./6-space-game/5-keeping-score/README.md)                                    |          کریس          |
+| ۲۰  |           [Space Game](./6-space-game/solution/README.md)           |                     پایان و راه‌اندازی مجدد بازی                     | یادگیری درباره خاتمه دادن به بازی و راه‌اندازی مجدد آن، شامل پاکسازی منابع و تنظیم مجدد مقادیر متغیر                              |                                [شرط پایان](./6-space-game/6-end-condition/README.md)                                 |          کریس          |
+| ۲۱  |         [Banking App](./7-bank-project/solution/README.md)          |                 قالب‌ها و مسیرها (Routes) در یک وب اپ                 | یادگیری چگونگی ایجاد ساختار سایت چند صفحه‌ای با استفاده از مسیرها و قالب‌های HTML                             |                            [قالب‌ها و مسیرها](./7-bank-project/1-template-route/README.md)                             |          یوهان          |
+| ۲۲  |         [Banking App](./7-bank-project/solution/README.md)          |                  ساخت فرم ورود و ثبت‌نام                   | یادگیری ساخت فرم‌ها و مدیریت روال‌های اعتبارسنجی                                                                          |                                           [فرم‌ها](./7-bank-project/2-forms/README.md)                                           |          یوهان          |
+| ۲۳  |         [Banking App](./7-bank-project/solution/README.md)          |                   روش‌های دریافت و استفاده از داده‌ها                   | جریان داده‌ها در برنامه شما، نحوه دریافت، ذخیره و دفع آن‌ها                                                 |                                            [داده‌ها](./7-bank-project/3-data/README.md)                                            |          یوهان          |
+| ۲۴  |         [Banking App](./7-bank-project/solution/README.md)          |                      مفاهیم مدیریت وضعیت (State)                      | یادگیری اینکه برنامه چگونه وضعیت خود را حفظ می‌کند و نحوه مدیریت آن به صورت برنامه‌نویسی                                                              |                                [مدیریت وضعیت](./7-bank-project/4-state-management/README.md)                                |          یوهان          |
+| ۲۵ | [کد مرورگر/وی اس کد](../../8-code-editor) | کار با وی اس کد | یادگیری نحوه استفاده از یک ویرایشگر کد | [استفاده از ویرایشگر کد وی اس کد](./8-code-editor/1-using-a-code-editor/README.md) | کریس |
+| ۲۶ | [دستیاران هوش مصنوعی](./9-chat-project/README.md) | کار با هوش مصنوعی | یادگیری ساخت دستیار هوش مصنوعی خود | [پروژه دستیار هوش مصنوعی](./9-chat-project/README.md) | کریس |
+
+## 🏫 روش تدریس
+
+برنامه درسی ما با در نظر گرفتن دو اصل کلیدی آموزشی طراحی شده است:
+* یادگیری مبتنی بر پروژه
+* آزمون‌های مکرر
+
+این برنامه اصول جاوااسکریپت، HTML و CSS را به همراه جدیدترین ابزارها و تکنیک‌های مورد استفاده توسعه‌دهندگان وب امروز آموزش می‌دهد. دانش‌آموزان فرصت خواهند داشت با ساخت بازی تایپینگ، تراریوم مجازی، افزونه مرورگر سازگار با محیط زیست، بازی سبک مهاجم فضایی و اپلیکیشن بانکی برای کسب‌وکارها، تجربه عملی کسب کنند. تا پایان این مجموعه، دانش‌آموزان درک محکمی از توسعه وب به‌دست خواهند آورد.
+
+> 🎓 شما می‌توانید چند درس اول این برنامه درسی را به‌عنوان [مسیر یادگیری](https://docs.microsoft.com/learn/paths/web-development-101/?WT.mc_id=academic-77807-sagibbon) در مایکروسافت لرن دنبال کنید!
+
+با اطمینان از همسویی محتوا با پروژه‌ها، فرایند برای دانش‌آموزان جذاب‌تر شده و یادگیری مفاهیم بهتر حفظ می‌شود. همچنین، چند درس شروع‌کننده در پایه‌های جاوااسکریپت نوشته‌ایم تا مفاهیم را معرفی کنیم، به همراه ویدیویی از مجموعه آموزشی "[سری مبتدیان به: جاوااسکریپت](https://channel9.msdn.com/Series/Beginners-Series-to-JavaScript/?WT.mc_id=academic-77807-sagibbon)" برخی نویسندگان آن در این برنامه مشارکت داشته‌اند.
+
+علاوه بر این، یک آزمون کم‌فشار پیش از کلاس، هدف‌گذاری دانش‌آموزان را برای یادگیری موضوع تنظیم می‌کند و آزمون دوم پس از کلاس باعث حفظ بیشتر مطلب می‌شود. این برنامه درسی به گونه‌ای طراحی شده که انعطاف‌پذیر و سرگرم‌کننده باشد و می‌توان آن را به‌طور کامل یا بخشی از آن را گذراند. پروژه‌ها از سطح ساده آغاز شده و در انتهای دوره ۱۲ هفته‌ای به مرور پیچیده‌تر می‌شوند.
+
+در حالی که آگاهانه از معرفی فریمورک‌های جاوااسکریپت اجتناب کرده‌ایم تا بر مهارت‌های پایه‌ای لازم برای توسعه‌دهنده وب تمرکز کنیم قبل از پذیرش یک فریمورک، گام بعدی مناسب برای تکمیل این برنامه یادگیری Node.js از طریق مجموعه ویدیوهای دیگر است: "[سری مبتدیان به: Node.js](https://channel9.msdn.com/Series/Beginners-Series-to-Nodejs/?WT.mc_id=academic-77807-sagibbon)".
+
+> از [کد رفتار](CODE_OF_CONDUCT.md) و [راهنمای مشارکت](CONTRIBUTING.md) ما دیدن کنید. بازخورد سازنده شما را خوشامد می‌گوییم!
+
+## 🧭 دسترسی آفلاین
+
+شما می‌توانید این مستندات را به صورت آفلاین با استفاده از [Docsify](https://docsify.js.org/#/) اجرا کنید. این مخزن را فورک کنید، [Docsify را نصب کنید](https://docsify.js.org/#/quickstart) روی دستگاه محلی خود، و سپس در پوشه ریشه این مخزن دستور `docsify serve` را وارد نمایید. وب‌سایت روی پورت ۳۰۰۰ در لوکال‌هاست شما قابل دسترس خواهد بود: `localhost:3000`.
+
+## 📘 PDF
+
+یک فایل PDF از تمام دروس را می‌توانید [در اینجا](https://microsoft.github.io/Web-Dev-For-Beginners/pdf/readme.pdf) بیابید.
+
+## 🎒 دوره‌های دیگر
+تیم ما دوره‌های دیگری هم تولید می‌کند! نگاهی بیندازید به:
+
+<!-- CO-OP TRANSLATOR OTHER COURSES START -->
+### LangChain
+[![LangChain4j for Beginners](https://img.shields.io/badge/LangChain4j%20for%20Beginners-22C55E?style=for-the-badge&&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchain4j-for-beginners)
+[![LangChain.js for Beginners](https://img.shields.io/badge/LangChain.js%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchainjs-for-beginners?WT.mc_id=m365-94501-dwahlin)
+
+---
+
+### Azure / Edge / MCP / Agents
+[![AZD for Beginners](https://img.shields.io/badge/AZD%20for%20Beginners-0078D4?style=for-the-badge&labelColor=E5E7EB&color=0078D4)](https://github.com/microsoft/AZD-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![Edge AI for Beginners](https://img.shields.io/badge/Edge%20AI%20for%20Beginners-00B8E4?style=for-the-badge&labelColor=E5E7EB&color=00B8E4)](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![MCP for Beginners](https://img.shields.io/badge/MCP%20for%20Beginners-009688?style=for-the-badge&labelColor=E5E7EB&color=009688)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![AI Agents for Beginners](https://img.shields.io/badge/AI%20Agents%20for%20Beginners-00C49A?style=for-the-badge&labelColor=E5E7EB&color=00C49A)](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### سری هوش مصنوعی مولد
+[![Generative AI for Beginners](https://img.shields.io/badge/Generative%20AI%20for%20Beginners-8B5CF6?style=for-the-badge&labelColor=E5E7EB&color=8B5CF6)](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (.NET)](https://img.shields.io/badge/Generative%20AI%20(.NET)-9333EA?style=for-the-badge&labelColor=E5E7EB&color=9333EA)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (Java)](https://img.shields.io/badge/Generative%20AI%20(Java)-C084FC?style=for-the-badge&labelColor=E5E7EB&color=C084FC)](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
+[![Generative AI (JavaScript)](https://img.shields.io/badge/Generative%20AI%20(JavaScript)-E879F9?style=for-the-badge&labelColor=E5E7EB&color=E879F9)](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### آموزش پایه‌ای
+[![ML for Beginners](https://img.shields.io/badge/ML%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=22C55E)](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
+[![Data Science for Beginners](https://img.shields.io/badge/Data%20Science%20for%20Beginners-84CC16?style=for-the-badge&labelColor=E5E7EB&color=84CC16)](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
+[![AI for Beginners](https://img.shields.io/badge/AI%20for%20Beginners-A3E635?style=for-the-badge&labelColor=E5E7EB&color=A3E635)](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
+[![Cybersecurity for Beginners](https://img.shields.io/badge/Cybersecurity%20for%20Beginners-F97316?style=for-the-badge&labelColor=E5E7EB&color=F97316)](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
+[![Web Dev for Beginners](https://img.shields.io/badge/Web%20Dev%20for%20Beginners-EC4899?style=for-the-badge&labelColor=E5E7EB&color=EC4899)](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
+[![IoT for Beginners](https://img.shields.io/badge/IoT%20for%20Beginners-14B8A6?style=for-the-badge&labelColor=E5E7EB&color=14B8A6)](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
+[![XR Development for Beginners](https://img.shields.io/badge/XR%20Development%20for%20Beginners-38BDF8?style=for-the-badge&labelColor=E5E7EB&color=38BDF8)](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+
+---
+ 
+### سری کوپایلوت
+[![Copilot for AI Paired Programming](https://img.shields.io/badge/Copilot%20for%20AI%20Paired%20Programming-FACC15?style=for-the-badge&labelColor=E5E7EB&color=FACC15)](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
+[![Copilot for C#/.NET](https://img.shields.io/badge/Copilot%20for%20C%23/.NET-FBBF24?style=for-the-badge&labelColor=E5E7EB&color=FBBF24)](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
+[![Copilot Adventure](https://img.shields.io/badge/Copilot%20Adventure-FDE68A?style=for-the-badge&labelColor=E5E7EB&color=FDE68A)](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
+<!-- CO-OP TRANSLATOR OTHER COURSES END -->
+
+## دریافت کمک
+
+اگر گیر کردید یا سوالی درباره ساخت برنامه‌های هوش مصنوعی داشتید، به دیگر یادگیرندگان و توسعه‌دهندگان باتجربه در بحث‌های مربوط به MCP بپیوندید. این یک جامعه حمایتی است که در آن سوالات پذیرفته شده و دانش به صورت آزاد به اشتراک گذاشته می‌شود.
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+اگر بازخورد محصول یا خطایی هنگام ساخت دارید، مراجعه کنید به:
+
+[![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
+
+## مجوز
+
+این مخزن تحت مجوز MIT است. برای اطلاعات بیشتر به فایل [LICENSE](../../LICENSE) مراجعه کنید.
+
+---
+
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**توضیح مهم**:  
+این سند با استفاده از خدمات ترجمه هوش مصنوعی [Co-op Translator](https://github.com/Azure/co-op-translator) ترجمه شده است. در حالی که ما برای دقت تلاش می‌کنیم، لطفاً توجه داشته باشید که ترجمه‌های خودکار ممکن است شامل خطاها یا نادرستی‌هایی باشند. سند اصلی به زبان بومی آن باید به عنوان منبع معتبر در نظر گرفته شود. برای اطلاعات حیاتی، ترجمه حرفه‌ای انسانی توصیه می‌شود. ما مسئول هیچ گونه سوتفاهم یا تفسیر اشتباه ناشی از استفاده از این ترجمه نیستیم.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->
